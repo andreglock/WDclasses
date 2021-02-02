@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="06BDL.html">BDL 5</a>
+            <a href="07BDL.html">BDL 6</a>
+            <a href="08BDL.html">BDL 7</a>
+            <a href="09UIB.html">UIB 1</a>
+            <a href="10UIB.html">UIB 2</a>
+            <a href="11UIB.html">UIB 3</a>
+            <a href="12UIB.html">UIB 4</a>
+            <a href="13UIB.html">UIB 5</a>
+            <a href="14UIB.html">UIB 6</a>
+        </div>
+        <div id="content">
+<h1>BDL 8 - Even MORE git stuff!- <code>git init</code> - initializes the current working folder as a git repository</h1>
+<ul>
+<li>Init should just be run one time per repository</li>
+<li><code>git</code> commands can be run in subfolders</li>
+<li>Git <em>only</em> tracks files, not directories</li>
+<li>The commit message of the first commit to a repo often is "Initial import", "Initial commit" or something similar</li>
+<li>You can create a repository in GitHub before OR after creating your local project</li>
+<li>To add an existing local git repository (new project for example) to a newly created GH repository, you need to add the GH repository as a <em>remote</em><ul>
+<li><code>git remote add origin https://github.com/usernamehere/projectnamehere.git</code></li>
+</ul>
+</li>
+<li>You can see the manual for git commands too! <code>man git branch</code></li>
+</ul>
+<h1>BDL The final countdown- Pull Request Review / Code Review example</h1>
+<ul>
+<li>New Project Example starting from GitHub</li>
+<li><code>git branch</code> - show a listing of all the branches</li>
+<li><code>git branch -v</code> - show a list of all the branches (verbose, show more information)</li>
+<li><code>git commit -m "Improve README"</code> - create a new commit and give it a commit message at the same time!</li>
+<li><code>git log</code> - Shows the commit history of a repository</li>
+<li><code>git diff</code> - Show the differences between two states in git<ul>
+<li>For example, show the modifications you have done without committing</li>
+</ul>
+</li>
+<li><code>git checkout</code> - Can do many different things<ul>
+<li><code>git checkout [Branchname]</code> - This one switches the currently active branch</li>
+<li><code>git checkout -b [Branchname]</code> - This one creates a new branch called "Branchname"</li>
+<li><code>git checkout -- [path_to_file]</code> - This one reverts the changes you have made to a file</li>
+</ul>
+</li>
+<li><code>git rm</code> - Remove a file from git</li>
+<li>Conflicts<ul>
+<li>Conflicts happen when a file is modified at the same time in two different places and those changes are merged</li>
+<li>For example, Kai edits REAMDE.md in GitHub and Joel edits README.md in the local repository and tries to merge the changes</li>
+<li>What needs to happen is we need to Resolve the Conflict</li>
+<li>When a conflict happens, you need to:<ol>
+<li>manually fix the conflicted files</li>
+<li>stage (git add) the fixed conflicted files</li>
+<li>make a new commit</li>
+<li>remember to use git status to help you along</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+        </div>
+    </body>
+</html>

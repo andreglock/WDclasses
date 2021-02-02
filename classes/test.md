@@ -1,8 +1,6 @@
-# Basic digital literacy 11.01.2020
-
-Windows and Linux terminals are very different.
+# Basic digital literacy 
+11.01.2020Windows and Linux terminals are very different.
 Mac and Linux terminals are very similar.
-
 ## TerminalThe terminal is sometimes called 
  - console
  - shell
@@ -12,28 +10,22 @@ Mac and Linux terminals are very similar.
  	etc/  - configuration files
  	var/  - logs
  	tmp/  - temporary files
- 	...
-	 
+
 ## Special folder names
+	 
 ### Absolute paths
 "/"  -- root directory
 "/home/dci/Downloads"
 ### Alias or variable path
-"~"  -- home directory
-### Special shortcut
-"-"  -- previous directory
-### Relative paths
+"~"  -- home directory### Special shortcut
+"-"  -- previous directory### Relative paths
 ".." -- up one level in the directory tree or structure
-"."  -- current directory
-## Basic commands
-$ pwd # print working directory
+"."  -- current directory## Basic commands$ pwd # print working directory
 $ ls  # list
 $ cd  # change directory
 $ cd .. # change directory up the directory tree
-$ cd Downloads # change directory to "Downloads"Note! Use the tab key when you can!
-$ ls -l
+$ cd Downloads # change directory to "Downloads"Note! Use the tab key when you can!$ ls -l
 $ ls -a
 $ ls -h
-$ ls -lah
-$ history
-$ up arrow, down arrow
+$ ls -lah$ history
+up arrow, down arrow

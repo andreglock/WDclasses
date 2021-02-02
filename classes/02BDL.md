@@ -1,13 +1,15 @@
-# Basic Digital Literacy day 2RECAP$ ls -lah
+# Basic Digital Literacy day 2 RECAP
+$ ls -lah
 $ pwd
 $ history
-$ cd## Files and FolderssNaming
+$ cd
+## Files and Folders Naming
     Names are like
     something.zip
     Case sensitive!
     File name endings are nice to have, but not necessary
     Text files and binary files
-        Binary files need a program to be openeds
+        Binary files need a program to be opened
         Text files contain readable text content
     Avoid strange characters such as space, ü and ä
     Use alphanumerics for file namings
@@ -20,10 +22,11 @@ $ cd## Files and FolderssNaming
 - File and folder name matching or searching using the characters * and ?
 - the * is often called a wildcard (asterisk)
 - commands like `ls Do*`
-- `ls -R Do*` <-- List files and folders Recursively## New commandsprint out files:
+- `ls -R Do*` <-- List files and folders Recursively
+## New commands print out files:
 $ cat filename(s) # display the contents of a file or files
 the cat command = conCATente text file(s)$ ls [-l] [file or folder name(s)s]Change your password
-$ passwd # change your passwordxGetting help and more info on commands
+$ passwd # change your password Getting help and more info on commands
 $ man [somecommand] # display manual file for a command
 $ [ls] --help # display help output for a commandControlling files and folders
 $ mkdir something # create new directory
