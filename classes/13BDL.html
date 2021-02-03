@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="05BDL.html">BDL 5</a>
+            <a href="06BDL.html">BDL 6</a>
+            <a href="07BDL.html">BDL 7</a>
+            <a href="09UIB.html">UIB 1</a>
+            <a href="10UIB.html">UIB 2</a>
+            <a href="11UIB.html">UIB 3</a>
+            <a href="12UIB.html">UIB 4</a>
+            <a href="13UIB.html">UIB 5</a>
+            <a href="14UIB.html">UIB 6</a>
+        </div>
+        <div id="content">
+<h1>UIB - Images</h1>
+<h2>Basic HTML, CSS with images</h2>
+<ul>
+<li>Downloading images<ul>
+<li>Context menu depends on what thing you rightclicked</li>
+<li>Normal images have a "Save image as" option</li>
+</ul>
+</li>
+<li>Normal HTML images: <code>&lt;img src="image.jpg2" alt="Here!"&gt;</code><ul>
+<li>The ALT attribute is important<ul>
+<li>Provides a text alternative if the image doesn't work</li>
+<li>Especially needed if the user has a screen reader</li>
+<li>If the image is broken or loads very very slowly, this can provide context too</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Width and height<ul>
+<li>You can add width and height as attributes<ul>
+<li><code>&lt;img src="image.jpg" alt="Here!" width="200" height="100"&gt;</code><ul>
+<li>No units!</li>
+</ul>
+</li>
+<li>Width/height when give as attributes (inline) they generally should be the real sizes of the image<ul>
+<li>Often used when images are part of the content</li>
+</ul>
+</li>
+<li>The space for the image is reserved</li>
+</ul>
+</li>
+<li>You can also use CSS to size images<ul>
+<li>Even when they have an inline size definition!</li>
+<li>CSS overrules HTML width/height</li>
+</ul>
+</li>
+<li>In the real world, in perfect examples, you have both defined<ul>
+<li>This is optimal for making the site work in all cases</li>
+</ul>
+</li>
+<li>Avoid having huge images squeezed into small spaces<ul>
+<li>This makes websites load very slowly</li>
+<li>Depending on the situation, you can have different sizes for the same images</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Absolute and relative paths<ul>
+<li>Absolute: Works from anywhere (on your own website)<ul>
+<li>Full URL</li>
+<li><code>&lt;img src="https://www.example.org/image.jpg" alt="Example images!" width="200" height="100"&gt;</code></li>
+</ul>
+</li>
+<li>Relative:<ul>
+<li>Relative to the current URL</li>
+<li>Local URL</li>
+<li><code>&lt;img src="./../pics/image.jpg" alt="Example images!" width="200" height="100"&gt;</code>## New CSS!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Borders!<ul>
+<li>Rule: <code>border</code></li>
+<li>Value: <code>[width] [style] [color]</code></li>
+<li>Width can be defined with <code>px</code>, <code>rem</code>, <code>em</code> etc CSS units</li>
+<li>Style is mandatory<ul>
+<li>solid</li>
+<li>dashed</li>
+<li>dotted</li>
+<li>double</li>
+<li>groove</li>
+<li>etc</li>
+</ul>
+</li>
+<li>Color is optional, defaults to current font color<ul>
+<li>Use the usual CSS color rules (named, hex, rgb, etc...)</li>
+</ul>
+</li>
+<li>Can be defined separately as well<ul>
+<li><code>border-color</code></li>
+<li><code>border-width</code></li>
+<li>etc</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Border radius!<ul>
+<li><code>border-radius: 15px;</code></li>
+<li>most commonly done with pixels or with percentages<ul>
+<li><code>border-radius: 50%</code> - very common with profile pictures</li>
+</ul>
+</li>
+<li>Value can be defined separately for the corners</li>
+<li><code>border-radius: 15px 5px 15px 5px;</code></li>
+<li><code>border-radius: 40% 15%;</code></li>
+</ul>
+</li>
+<li>Object-fit and Width AND height<ul>
+<li>for example, an image within a parent div</li>
+<li>makes the image fit in the specified way</li>
+<li><code>object-fit</code>, <code>width</code> and <code>height</code> are used together</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit        <code>&lt;div style="border: 1px solid red; width: 90vw; height: 200px;"&gt;
+        &lt;img
+            src="https://placekitten.com/500/200"
+            alt="Kitten"
+            style="object-fit: cover; width: 100%; height: 100%;"
+        &gt;
+    &lt;/div&gt;</code></li>
+<li>Can be used for other things than images too (videos)</li>
+</ul>
+</li>
+<li>Image links<ul>
+<li>Just wrap an image with an <code>a</code> link tag</li>
+</ul>
+</li>
+<li>Using float<ul>
+<li>CSS <code>float</code></li>
+<li>"float" is a thing that was designed to wrap text around an image</li>
+<li>Mostly to be used when you control the image and the text</li>
+<li>Avoid using float for <em>anything</em> else (design)## Image formatsMost common and important formats used in the web    - JPG<ul>
+<li>Raster</li>
+<li>Binary files</li>
+<li>This compression works best for photos</li>
+</ul>
+</li>
+<li>PNG<ul>
+<li>Raster</li>
+<li>Binary files</li>
+<li>This compression works best for logos/cartoons/screenshots/gradients etc (not photos)</li>
+<li>Can be transparent</li>
+<li>Can be animated (rare, sometimes .apng or .mpng etc)</li>
+</ul>
+</li>
+<li>GIF<ul>
+<li>Raster</li>
+<li>Binary files</li>
+<li>Can be transparent</li>
+<li>Can be animated</li>
+</ul>
+</li>
+<li>SVG<ul>
+<li>Inline or Normally</li>
+<li>Just text files (XML)</li>
+<li>Vector</li>
+<li>Can be transparent</li>
+<li>Can be animated (with CSS or JavaScript)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+        </div>
+    </body>
+</html>

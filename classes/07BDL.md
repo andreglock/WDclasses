@@ -1,4 +1,5 @@
-# BDL Day 7 :)## GIT- Git tracks the version history of files
+# BDL Day 7 :)
+## GIT- Git tracks the version history of files
 - The history of a project is a timeline containing sets of changes (commits)
 - Terminology
     - Commit = Set of changes to files

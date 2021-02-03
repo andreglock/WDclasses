@@ -1,4 +1,6 @@
-# UIB - Images## Basic HTML, CSS with images
+# UIB - Images
+
+## Basic HTML, CSS with images
 - Downloading images
     - Context menu depends on what thing you rightclicked
     - Normal images have a "Save image as" option

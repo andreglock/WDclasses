@@ -1,4 +1,6 @@
-# UIB content 2## New CSS Stuff!
+# UIB content - part 2
+
+## New CSS Stuff!
 - Elements with an "id" attribute
     - New HTML attribute called `id`
     - One element can only have one ID

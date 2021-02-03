@@ -1,4 +1,6 @@
-# UIB day 4## Updating a forked repository from the original
+# UIB day 4
+
+## Updating a forked repository from the original
  - Automatic
     - Create a new Pull Request in GitHub
     - Click on "Switch base", if it is available to you#
