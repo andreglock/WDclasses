@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="05BDL.html">BDL 5</a>
+            <a href="06BDL.html">BDL 6</a>
+            <a href="07BDL.html">BDL 7</a>
+            <a href="09UIB.html">UIB 1</a>
+            <a href="10UIB.html">UIB 2</a>
+            <a href="11UIB.html">UIB 3</a>
+            <a href="12UIB.html">UIB 4</a>
+            <a href="13UIB.html">UIB 5</a>
+            <a href="14UIB.html">UIB 6</a>
+        </div>
+        <div id="content">
+<h1>UIB - Fonts and boxes</h1>
+<h2>Quick tip- Google Fonts for custom fonts## Everything is a box!- Easy to see with inspecting and setting Dev tools CSS</h2>
+<ul>
+<li><code>* { border: 1px solid red !important; }</code></li>
+<li><code>div { border: 1px solid blue !important; }</code></li>
+<li><code>span { border: 1px solid green !important; }</code></li>
+</ul>
+<h2>Containing content- Semantic elements, let's learn a few</h2>
+<ul>
+<li><code>&lt;main&gt;</code></li>
+<li>represents the main content of a page</li>
+<li>often combined with "skipnav" technique</li>
+<li>nav = your navigation menu<ul>
+<li><code>&lt;nav&gt;</code> - semantic element used for wrapping your navigation section</li>
+</ul>
+</li>
+<li>used for wrapping your main content</li>
+<li>"shrink wrapping" / wrapping<ul>
+<li>put all of your content inside the main</li>
+</ul>
+</li>
+<li>often you can have classes and/or ids for your main element<ul>
+<li><main class="container"></main></li>
+</ul>
+</li>
+<li>One (visible) main per page## Stop content busting out of its box!    width: 40vw;       /<em> Set box width </em>/
+    height: 40vh;      /<em> Set box height </em>/
+    margin: auto;      /<em> Center this box inside its parent box </em>/
+    overflow: hidden;  /<em> Prevent content from overflowing out of the box! </em>/</li>
+</ul>
+        </div>
+    </body>
+</html>
