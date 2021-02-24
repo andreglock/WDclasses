@@ -1,6 +1,45 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100vh; /* 100% Full-height */
+    width: 150px;
+    position: fixed; /* Stay in place */
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(233, 233, 233);
+    padding-top: 10px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+    
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+    
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #808080;
+}
+
+a.home {
+    background-image: url(img/home.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 2em;
 }
 
 body {
@@ -21,14 +60,14 @@ a {
     color: white;
 }
 
-li {
+a.block {
     background-color: #333;
+    display: block;
     color: white;
-    list-style: none;
     width: 100%;
     padding: 5px 20px;
     margin-top: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -37,22 +76,30 @@ main {
     margin: 10px auto;
 }
 
-img {
+main>div, img {
     width: 100%;
     margin: 10px 0;
     border-radius: 25px;
     box-shadow: yellowgreen 0 0 25px;
 }
 
+main>div {
+    min-height: 292px;
+    text-align: center;
+    background-color: #2f8d66;
+}
+
+h2 {
+    color: white;
+    text-shadow: purple 0 0 8px;
+    padding: 10px;
+    font-size: 1.7em;
+}
+
 @media (min-width: 710px) {
     ul {
-        margin: 0 auto;
-        width: max-content;
-    }
-    
-    li {
-        width: min-content;
-        display: inline-block;
+        margin: 0 auto;/* 
+        width: max-content; */
     }
     
     a {
@@ -72,8 +119,12 @@ img {
         flex-wrap: wrap;
     }
     
-    img {
+    main>div, img {
         width: 390px;
         margin: 20px;
     }
+}
+
+#pagewrapper {
+    margin-left: 160px;
 }
