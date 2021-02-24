@@ -43,6 +43,7 @@ https://en.wikipedia.org/wiki/Principles_of_user_interface_design
         - Buttons look similar etc
 
 ## Designing with Colors!
+
 - Branding is important here!
         - Tiffany.de -- The "Tiffany" blue
         - Fiskars.com -- The "Fiskars" orange
@@ -101,8 +102,8 @@ https://en.wikipedia.org/wiki/Principles_of_user_interface_design
 - You can use text and box shadows to emulate a light source
 
 ## Further research suggestions
+
 -  (Podcast) https://syntax.fm/show/196/design-foundations-for-developers
         - Syntax is a fantastic podcast generally, but the other topics are a bit more advanced usually
 - https://mockplus.com/blog/post/learn-ui-design (quick read, has good links to resources)
 - https://whydoweinterface.com/ (longer read, like a book with for example historical info rather than a tutorial, also a great looking website!)
-  

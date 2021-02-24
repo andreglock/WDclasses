@@ -9,6 +9,7 @@
 </head>
     <body>
         <div class="sidenav">
+            <a href="../index.html" class="home"></a>
             <a href="01BDL.html">BDL 1</a>
             <a href="02BDL.html">BDL 2</a>
             <a href="03BDL.html">BDL 3</a>
@@ -16,159 +17,141 @@
             <a href="05BDL.html">BDL 5</a>
             <a href="06BDL.html">BDL 6</a>
             <a href="07BDL.html">BDL 7</a>
-            <a href="09UIB.html">UIB 1</a>
-            <a href="10UIB.html">UIB 2</a>
-            <a href="11UIB.html">UIB 3</a>
-            <a href="12UIB.html">UIB 4</a>
-            <a href="13UIB.html">UIB 5</a>
-            <a href="14UIB.html">UIB 6</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
         </div>
         <div id="content">
-<h1>BDL 5 Day 4</h1>
-<h2>Core internet skills and knowledge</h2>
-<p>Networking = communication with a shared set of protocols.
-Protocol = an agreement on how to do a very specific thing.</p>
-<p>Internet Protocol
-70s
-mail, file exchange, message boards
-Two kinds communication
-TCP Connected - like a telephone - used for example in games and some chat
-UDP Connectionless - like the post office - far more commons</p>
-<p>All computers on a network have an address
-IPv4 - IP addresses
-Can sometimes change, so they are dynamic
-You can buy static IP addresses, most servers have a static address that doesn't change
-Can be shared among many computers too
-192.168.1.1 &lt;-- example
-0.0.0.0 - 255.255.255.255
-Public (used on the internet) and Private (used in local networks) addresses
-VPNs will hide or change your address
-You can run multiple websites in one IP address, on the same server
-We are slowly running out of addresses
-~3400 million addresses
-127.0.0.1 &lt;- your local machine</p>
-<p>IPv6 - new shiny awesome unique addresses
-2001:db8::8a2e:370:1123</p>
-<p>DNS - Domain name system
-Each IP address can have a human readable domain name
-google.de is a domain address
-one website can have multiple IP addresses, but usually just one domain
-The point of domains is to make Addresses easy to recognize and remember
-You can register domains for yourself
-Domain names are a big business
-Usually you pay per domain per year
-Domain name servers are run by multiple organizations over the globe
-When registering a domain, it takes a little bit of time for your new domain to be available
-When changing a domain, it takes time to change too
-<a href="https://www.google.de">www.google.de</a> --&gt; 19.22.55.12</p>
-<p>You can check who owns a domain, or at least get some info on it
-<a href="https://who.is/">https://who.is/</a></p>
-<p>TLD Top Level Domain
-Examples
-.de
-.fi
-.tv -- tuvalu
-.com --- "commerce"
-.info
-.org --- "organization"
-.gov --- "government"
-You cannot register to every single TLD
-Domains are Mostly alphanumeric
-www.abcde1234689.com
-It is unusual to see a domain like www.üüüüüÄÖöÄ.com</p>
-<p>Domains have Subdomains
-For example: www.google.de
-"www" is a subdomain
-website.amazon.de
-ww2.services.internet.bank.de
-mail.google.com</p>
-<p>Hosts file
-Historically, before DNS we just had a hosts file
-120.5.1.1 jennyscomputer
-154.1.1.1 bobs-message-board
-In linux it#s at /etc</p>
-<p>All data transferred is between server and client</p>
-<p>URL
-Universal Resource Locator
-Web address
-example.org # simplest possible
-www.example.org # subdomain
-http://www.example.org # protocol part -- basic one; HyperText Transfer Protocol
-https://example.org # protocol;
-http://example.org:80 # the port --
-https://example.org:443 # the port for
-http://localhost:3000 # port 3000 is usually for NodeJS</p>
-<p>http://example.org/dogs # "dogs" here is part of the path, some kind of resource
-http://example.org/dogs.html # if you have an extension, it could be a file, but might not</p>
-<h1>could be a file, or could point to some logic</h1>
-<p>http://example.org/dogs/search # "dogs/search" is part of the path, again some resource</p>
-<p>http://example.org/dogs/poodle?color=white&amp;puppy=false&amp;size=small
-[--query parameters---]
-Query parameters are separated first with a question mark ? and after that, with an &amp;</p>
-<p>http://example.org/dogs/poodle?color=white#bottom # the fragment part</p>
-<h1>could be a part of the page</h1>
-<h1>could be some strange logic..</h1>
-<h1>always the last part</h1>
-<p>URLs are basically always unicode, meaning that symbols need to be Encoded.</p>
-<p>URL encoding looks like this: "green apple" -----encoding---&gt; "green%20apple"
-"green%20apple" ---decoding---&gt; "green apple"</p>
-<p>Ports
-80 - used for normal
-443 - used for
-22 - used for SSH connections</p>
-<p>A word on publishing</p>
-<p>You have a website. How do you publish it?</p>
-<h3>FTP - File Transfer Protocol</h3>
-<p>The Oldschool way of publishing
-Just copy the files to the server, usually with a graphical program</p>
-<h3>SSH - Secure SHell</h3>
-<p>Copying files manually or over git
-... But mostly used for connecting to a server.
-To transfer files use a command like $ scp SOURCEFILE.txt username@serveraddress:/target/path/</p>
-<h3>CI -- continuous integration systems</h3>
-<p>Used mostly on bigger projects and products
-As soon as your feature is accepted, it will automatically be updated into the website
-The most advanced system
-Difficult to set up
-Once up, it's by far the fastest ones
-Or "Contiunuous deployment"
-It might be only connected to a test or staging environment</p>
-<h3>Version control</h3>
-<p>You can go back and see the history of your files.
-You can see Who did, What did they do, When did they do it.</p>
-<p>Website is done
---- Add a new feature
---- Fix a bug
---- Change the User Interface</p>
-<p>History is just a part of why to use VCS - version control systems.</p>
-<p>Different VCS's
-- git --- originally developed for linux kernel development
-- subversion -- still popular but kinda old
-- mercurial...</p>
-<p>We will be using git.</p>
-<p>Other than history, the biggest reason to use a VCS is collaboration.
-You can monitor and check each others work.</p>
-<p>Checking other peoples work is often called Peer Review and/or Code Review.</p>
-<p>VCS help with dealing with conflicts when multiple people work on the same file at the same time.</p>
-<p>Advanced terminal usage</p>
-<h3>Running multiple commands at the same time!</h3>
-<p>Method 1:
-$ command1 &amp;&amp; command2
-Command2 will run only if command1 is successful!</p>
-<p>Method 2:
-$ command1; command2
-Command2 will run even if command1 fails!</p>
-<h3>Streams</h3>
-<p>In Linux-like systems each program has 3 streams:</p>
-<p>input STDIN standard in
-output STDOUT standard out
-error STDERR standard errors</p>
-<p>With the pipe symbol | we can redirect the output stream of a program
-into the input stream of some other program.</p>
-<p>With the &gt; symbol we can redirect the output stream into a file!
-Wit just one &gt; we will replace the contents of a file.
-With two of them, however we can append text to the end of a file;</p>
-<p>$ echo "New stuff here!" &gt;&gt; logfile.txt</p>
+<h1>BDL 4 - Day 3</h1>
+<h2>More commands</h2>
+<p>Friends of cat</p>
+<pre><code>$ tail output.log       # display the last lines of text in a file
+$ tail -n 5 output.log  # display the last 5 lines of text in a file
+</code></pre>
+<p>Have a peek at a file</p>
+<pre><code>$ head # display the first lines of text in a file
+</code></pre>
+<h2>Markdown</h2>
+<p>Markdown syntax Documentation: <a href="https://www.markdownguide.org/basic-syntax">Markdown Guide</a></p>
+<p>Super simple.
+Is rendered.
+Can be converted into HTML easily by renderers.
+Halfway between visual and code.</p>
+<p><img alt="Les Horribles Cernettes" src="./Les_Horribles_Cernettes_in_1992.jpeg" title="Les Horribles Cernettes say hello" /></p>
+<p>Syntax examples</p>
+<ul>
+<li>Images are done using this syntax: <code>![Image Text Version](relative/path/to/image.jpg "What the image is")</code></li>
+<li>List<ul>
+<li>Sublist 1<ul>
+<li>SubSublist 1</li>
+<li>SubSublist 2</li>
+</ul>
+</li>
+<li>Sublist 2</li>
+</ul>
+</li>
+<li>Text effect: <strong>Bold</strong> text</li>
+<li>Text effect: <strong>Bold</strong> text</li>
+<li>Text effect: <em>Italic</em> text</li>
+<li>Text effect: <em>Italic</em> text</li>
+<li>Text effects combo: <strong><em>Both</em> effects</strong></li>
+<li>Text effect: <code>Inline code blocks</code> like so!</li>
+<li>Linking to an address: <code>[Link Text Here](address here)</code></li>
+<li>Headings<ul>
+<li><code># Level 1</code></li>
+<li><code>## Level 2</code></li>
+<li><code>### Level 3 ... up until level 6</code></li>
+</ul>
+</li>
+<li>Indented code blocks / preformatted text</li>
+<li>Block quotes</li>
+<li>Numbered lists:<ol>
+<li>Example Banana</li>
+<li>Example Beet</li>
+<li>Example Cherry</li>
+<li>Example Potato</li>
+<li>Example Curry</li>
+</ol>
+</li>
+</ul>
+<p>Example of a Code Block:</p>
+<pre><code>$ mkdir projects/newproject
+$ cd projects/newproject
+$ something_else_amazing
+</code></pre>
+<blockquote>
+<p>Albert Einstein once said,</p>
+<p>"HTML Rocks"</p>
+<p>Something</p>
+</blockquote>
+<p>TASKS</p>
+<ol>
+<li>Open two consoles</li>
+<li>Run "history" in one of them</li>
+<li>In the other, create a new markdown file called "notes.md"</li>
+<li>In the new file, write down all the commands you have used</li>
+<li>Write down all the arguments you have used and a brief explanation of them</li>
+<li>Also put in a section for general tips and knowledge you have learned</li>
+<li>Use markdown examples and syntax</li>
+<li>I recommend using BOTH nano and visual studio code.</li>
+<li>When done, <code>cat</code> the file out in the console, copy it and send it to Joel as a private message in Slack.</li>
+</ol>
+<h2>Installing software</h2>
+<p>MAC/OSX -- brew, cask (macports program)</p>
+<p>A few commands</p>
+<p>$ df -h # check how much space do I have lefts 
+$ whoami
+$ groups
+$ sudo # do something as the "super user" or "root"</p>
+<p>Root has all permissions, can do anything to the system.
+Avoid using sudo or the root user as much as possible. Use only when necessary.</p>
+<p>Package management systems: apt, snap, npm, brew, cask, yum, gem, emerge</p>
+<p>$ sudo apt update   # updates the list of things that I can install
+$ sudo apt install  # actually installs something
+$ sudo apt remove   # uninstall something
+$ sudo apt search google chrome # search for something to install
+$ sudo apt autoremove # remove left over files from updating and installing</p>
+<p>$ sudo snap search opera
+$ sudo snap install opera
+$ sudo snap remove</p>
+<p>$ npm install -g "something" # node package manager installation
+$ npm uninstall -g "something" </p>
+<p>$ which  # show information about a program
+$ whereis # show program location</p>
+<h2>Browser Basics</h2>
+<p>Big browsers: Google Chrome, Safari, Internet Explorer, Edge, Mozilla Firefox
+Small browsers: Opera, Brave, Vivaldi, eLinks, DuckDuck, Midori....</p>
+<p>Target browsers: Support latest version of chrome and Edge</p>
+<p>Browser = Browser Engine + JavaScript engine + other stuff too, such as plugins and tools
+Browser Engine = HTML to visual rendering
+JavaSript Engine = Runs Javascript</p>
+<p>If your site works with one Browser using the Blink engine, most likely other Blink engine Browsers will work too.
+If your JS works with one browser that uses the V8 engine, it will most likely work with all of them.</p>
+<p>Shortcuts</p>
+<p>^T -- opens new tab
+^N -- opens new window
+^W -- closes a tab
+^Shift-T -- reopens a closed tab
+^Shift-N -- reopens a closed window
+F11 -- view full screen
+F12 -- open developer console -- the web developers best friend and toolkit</p>
         </div>
     </body>
 </html>

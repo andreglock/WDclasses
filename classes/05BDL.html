@@ -9,6 +9,7 @@
 </head>
     <body>
         <div class="sidenav">
+            <a href="../index.html" class="home"></a>
             <a href="01BDL.html">BDL 1</a>
             <a href="02BDL.html">BDL 2</a>
             <a href="03BDL.html">BDL 3</a>
@@ -16,48 +17,188 @@
             <a href="05BDL.html">BDL 5</a>
             <a href="06BDL.html">BDL 6</a>
             <a href="07BDL.html">BDL 7</a>
-            <a href="09UIB.html">UIB 1</a>
-            <a href="10UIB.html">UIB 2</a>
-            <a href="11UIB.html">UIB 3</a>
-            <a href="12UIB.html">UIB 4</a>
-            <a href="13UIB.html">UIB 5</a>
-            <a href="14UIB.html">UIB 6</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
         </div>
         <div id="content">
-<h1>DAY 6 - BDL - GITTodays agenda:</h1>
-<p>TEAM STUFF
-  - Code of conduct
-    - https://berlincodeofconduct.org/
-    - Rules
-      - Discrimination in all its forms won't be tolerated, tell Joel or Bianca if you witness this!
-      - Strive to be on time
-    - Expectations
-      - Respect others, "be excellent to each other"
-      - Communicate! It's better to overcommunicate than undercommunicate
-    - Guidelines
-      - There are no dumb questions!
-      - When frustrated, contact Joel. Or contact Bianaca if frustrated with Joel :)
-      - Be patient with others, sometimes you will know things already, but there's always the possibility of learning
-      - Be patient with yourself, learning this stuff takes time, repetition and effort
-      - It's OK to make mistakes and fail! Everyone does.
-  - Class name
-  - Class logo? Carsten you made a cool one for Markdown!
-  - Custom Slack workspace
-    - History is limited
-    - Files are limited
-    - Custom emojis :D
-    - Custom name
-    - Custom logo
-    - Easier to setup custom channels
-    - More privatererHACKATHON in #allgemein
-  - Register before feb 12!GIT
-  - Github account, send me your name!
-  - Git is distributed. You <em>are</em> a server too. GH is just the central repo. 
-  - Git tracks Files, not folders.
-  - Github
-    - It's a great tool, butt not the ONLY tool!
-    - Owned &amp; operated by microsoft, used for developing Linux :)
-    - First day on GH https://lab.github.com/githubtraining/first-day-on-github</p>
+<h1>BDL 5 Day 4</h1>
+<h2>Core internet skills and knowledge</h2>
+<p>Networking = communication with a shared set of protocols.
+Protocol = an agreement on how to do a very specific thing.</p>
+<p>Internet Protocol
+    70s
+    mail, file exchange, message boards
+    Two kinds communication
+        TCP Connected       - like a telephone - used for example in games and some chat
+        UDP Connectionless  - like the post office - far more commons</p>
+<p>All computers on a network have an address
+    IPv4 - IP adddresses
+        Can sometimes change, so they are dynamic
+        You can buy static IP addresses, most servers have a static address that doesn't change
+        Can be shared among many computers too
+        192.168.1.1 &lt;-- example
+        0.0.0.0 - 255.255.255.255
+        Public (used on the internet) and Private (used in local networks) addresses
+        VPNs will hide or change your address
+        You can run multiple websites in one IP address, on the same server
+        We are slowly running out of addresses
+        ~3400 million addresses
+        127.0.0.1 &lt;- your local machine</p>
+<pre><code>IPv6 - new shiny awesome unique addresses
+    2001:db8::8a2e:370:1123
+</code></pre>
+<p>DNS - Domain name system
+    Each IP address can have a human readable domain name
+    google.de is a domain address
+    one website can have multiple IP addresses, but usually just one domain  <br />
+    The point of domains is to make Addresses easy to recognize and remember
+    You can register domains for yourself
+    Domain names are a big business
+    Usually you pay per domain per year
+    Domain name servers are run by multiple organisations over the globe
+    When registering a domain, it takes a little bit of time for your new domain to be available
+    When changing a domain, it takes time to change too
+    www.google.de --&gt; 19.22.55.12
+    You can check who owns a domain, or at least get some info on it
+    https://who.is/</p>
+<pre><code>TLD Top Level Domain
+    Examples
+        .de
+        .fi
+        .tv -- tuvalu
+        .com --- "commerce"
+        .info
+        .org --- "organization"
+        .gov --- "government"
+    You cannot register to every single TLD
+Domains are Mostly alphanumeric
+    www.abcde1234689.com
+    It is unusual to see a domain like www.üüüüüÄÖöÄ.com
+
+Domains have Subdomains
+    For example: www.google.de
+    "www" is a subdomain
+    website.amazon.de
+    ww2.services.internet.bank.de
+    mail.google.com
+
+Hosts file
+    Historically, before DNS we just had a hosts file
+    120.5.1.1 jennyscomputer
+    154.1.1.1 bobs-message-board
+    In linux it#s at /etc
+</code></pre>
+<p>All data transferred is between server and client</p>
+<p>URL
+    Universal Resource Locator
+    Web address
+    example.org             # simplest possible
+    www.example.org         # subdomain
+    http://www.example.org  # protocol part -- basic one; HyperText Transfer Protocol
+    https://example.org     # protocol; http with SSL encryption; when in production, always use
+    http://example.org:80   # the port -- http -- the browser hides this one
+    https://example.org:443 # the port for https -- the browser hides this one
+    http://localhost:3000   # port 3000 is usually for NodeJS</p>
+<pre><code>http://example.org/dogs         # "dogs" here is part of the path, some kind of resource
+http://example.org/dogs.html    # if you have an extension, it could be a file, but might not
+http://example.org/captcha.jpg  # could be a file, or could point to some logic
+http://example.org/dogs/search  # "dogs/search" is part of the path, again some resource
+
+http://example.org/dogs/poodle?color=white&amp;puppy=false&amp;size=small
+                               [--query parameters---]
+Query parameters are separated first with a question mark `?` and after that, with an `&amp;`
+
+
+http://example.org/dogs/poodle?color=white#bottom   # the fragment part
+                                                    # could be a part of the page
+                                                    # could be some strange logic..
+                                                    # always the last part
+
+URLs are basically always unicode, meaning that symbols need to be Encoded.
+
+URL encoding looks like this: "green apple" -----encoding---&gt; "green%20apple"
+                              "green%20apple" ---decoding---&gt; "green apple"
+
+Ports
+    80 - used for normal http web traffic
+    443 - used for https web traffic
+    22  - used for SSH connections
+</code></pre>
+<h2>A word on publishing</h2>
+<p>You have a website. How do you publish it?</p>
+<h3>FTP - File Transfer Protocol</h3>
+<pre><code>The Oldschool way of publishing
+Just copy the files to the server, usually with a graphical program
+</code></pre>
+<h3>SSH - Secure SHell</h3>
+<pre><code>Copying files manually or over git
+... But mostly used for connecting to a server.
+To transfer files use a command like `$ scp SOURCEFILE.txt username@serveraddress:/target/path/`
+</code></pre>
+<h3>CI -- continuous integration systems</h3>
+<pre><code>Used mostly on bigger projects and products
+As soon as your feature is accepted, it will automatically be updated into the website
+The most advanced system
+Difficult to set up
+Once up, it's by far the fastest ones
+Or "Contiunuous deployment"
+It might be only connected to a test or staging environment
+</code></pre>
+<h3>Version control</h3>
+<p>You can go back and see the history of your files.
+You can see Who did, What did they do, When did they do it.</p>
+<p>Website is done
+    --- Add a new feature
+    --- Fix a bug
+    --- Change the User Interface</p>
+<p>History is just a part of why to use VCS - version control systems.</p>
+<p>Different VCS's
+    - git --- originally developed for linux kernel development
+    - subversion -- still popular but kinda old
+    - mercurial... </p>
+<p>We will be using git.</p>
+<p>Other than history, the biggest reason to use a VCS is collaboration.
+You can monitor and check each others work.</p>
+<p>Checking other peoples work is often called Peer Review and/or Code Review.</p>
+<p>VCS help with dealing with conflicts when multiple people work on the same file at the same time.</p>
+<h2>Advanced terminal usage</h2>
+<h3>Running multiple commands at the same time!</h3>
+<p>Method 1:
+    $ command1 &amp;&amp; command2
+    Command2 will run only if command1 is successful!</p>
+<p>Method 2:
+    $ command1; command2
+    Command2 will run even if command1 fails!</p>
+<h3>Streams</h3>
+<p>In Linux-like systems each program has 3 streams:</p>
+<pre><code>input       STDIN   standard in
+output      STDOUT  standard out
+error       STDERR  standard errors
+</code></pre>
+<p>With the pipe symbol <code>|</code> we can redirect the output stream of a program
+into the input stream of some other program.</p>
+<p>With the <code>&gt;</code> symbol we can redirect the output stream into a file!
+Wit just one &gt; we will replace the contents of a file.
+With two of them, however we can append text to the end of a file;</p>
+<p>$ echo "New stuff here!" &gt;&gt; logfile.txt</p>
         </div>
     </body>
 </html>

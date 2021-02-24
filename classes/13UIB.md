@@ -1,99 +1,107 @@
-# UIB - Images
+# UIB day 4
 
-## Basic HTML, CSS with images
-- Downloading images
-    - Context menu depends on what thing you rightclicked
-    - Normal images have a "Save image as" option
-- Normal HTML images: `<img src="image.jpg2" alt="Here!">`
-    - The ALT attribute is important
-        - Provides a text alternative if the image doesn't work
-        - Especially needed if the user has a screen reader
-        - If the image is broken or loads very very slowly, this can provide context too
-- Width and height
-    - You can add width and height as attributes
-        - `<img src="image.jpg" alt="Here!" width="200" height="100">`
-            - No units!
-        - Width/height when give as attributes (inline) they generally should be the real sizes of the image
-            - Often used when images are part of the content
-        - The space for the image is reserved
-    - You can also use CSS to size images
-        - Even when they have an inline size definition!
-        - CSS overrules HTML width/height
-    - In the real world, in perfect examples, you have both defined
-        - This is optimal for making the site work in all cases
-    - Avoid having huge images squeezed into small spaces
-        - This makes websites load very slowly
-        - Depending on the situation, you can have different sizes for the same images
-- Absolute and relative paths
-    - Absolute: Works from anywhere (on your own website)
-        - Full URL
-        - `<img src="https://www.example.org/image.jpg" alt="Example images!" width="200" height="100">`
-    - Relative:
-        - Relative to the current URL
-        - Local URL
-        - `<img src="./../pics/image.jpg" alt="Example images!" width="200" height="100">`## New CSS!
-- Borders!
-    - Rule: `border`
-    - Value: `[width] [style] [color]`
-    - Width can be defined with `px`, `rem`, `em` etc CSS units
-    - Style is mandatory
-        - solid
-        - dashed
-        - dotted
-        - double
-        - groove
-        - etc
-    - Color is optional, defaults to current font color
-        - Use the usual CSS color rules (named, hex, rgb, etc...)
-    - Can be defined separately as well
-        - `border-color`
-        - `border-width`
-        - etc
-- Border radius!
-    - `border-radius: 15px;`
-    - most commonly done with pixels or with percentages
-        - `border-radius: 50%` - very common with profile pictures
-    - Value can be defined separately for the corners
-    - `border-radius: 15px 5px 15px 5px;`
-    - `border-radius: 40% 15%;`
-- Object-fit and Width AND height
-    - for example, an image within a parent div
-    - makes the image fit in the specified way
-    - `object-fit`, `width` and `height` are used together
-    - https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit        ```
-        <div style="border: 1px solid red; width: 90vw; height: 200px;">
-            <img
-                src="https://placekitten.com/500/200"
-                alt="Kitten"
-                style="object-fit: cover; width: 100%; height: 100%;"
-            >
-        </div>
-        ```
-    - Can be used for other things than images too (videos)
-- Image links
-    - Just wrap an image with an `a` link tag
-- Using float
-    - CSS `float`
-    - "float" is a thing that was designed to wrap text around an image
-    - Mostly to be used when you control the image and the text
-    - Avoid using float for _anything_ else (design)## Image formatsMost common and important formats used in the web    - JPG
-        - Raster
-        - Binary files
-        - This compression works best for photos
-    - PNG
-        - Raster
-        - Binary files
-        - This compression works best for logos/cartoons/screenshots/gradients etc (not photos)
-        - Can be transparent
-        - Can be animated (rare, sometimes .apng or .mpng etc)
-    - GIF
-        - Raster
-        - Binary files
-        - Can be transparent
-        - Can be animated
-    - SVG
-        - Inline or Normally
-        - Just text files (XML)
-        - Vector
-        - Can be transparent
-        - Can be animated (with CSS or JavaScript)
+## Updating a forked repository from the original
+ - Automatic
+    - Create a new Pull Request in GitHub
+    - Click on "Switch base", if it is available to you#
+    - After merging the Pull Request, update your local repository using git pull
+ - Manual
+    - Copy the changes manually
+    - use git commands (Search Google for assistance here)
+
+## CSS Units
+ - CSS has a lot of units to use
+ - We will be looking at "px", "%", "em", "rem", "vw", "vh"
+ - New CSS: `width`, `height`, `font-size`
+ - New HTML: `<div>`
+    - No semantic meaning
+    - Container element, wrapper
+    - Often deeply nested
+    - Very very common in the real world
+- Pixels or `px`
+    - Static length or static size
+    - Basically, these are the unit of the web
+    - Reference pixels, Not Device pixels
+        - Mobile phone with 4k
+        - https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel
+        - Affected by zoom!
+    - Values smaller than one pixel can exist and are fairly common
+        - For example `font-size: 15.2px;`
+- Percentages or `%`
+    - Dependant on the parent
+    - Dynamic length or dynamic size
+    - Affected by zoom levels
+    - You can be more accurate than 1%, so "50.04%" is valid
+- For most users, the default font size of a browser is "16px"
+    - The root font size of a page is defined by the `<html>` element
+    - You can define this yourself with CSS
+    - The font settings _cascade_ down from the `<html>` element
+- Font size with percentages
+    - Like widths, these are dependent on the parent!
+    - Gets complicated with nesting!
+
+- `em` and the `rem` units
+    - Typography units
+    - Often used in font sizing, very useful there
+    - Not common for defining layouts
+        - Except for a few exceptions
+    - Units that come from typesetting originally
+    - rem - "root em" units
+        - Relative to root font size
+        - Can be tricky to design around if you don't have a set root font size
+            - Users might have different default font sizes
+        - A size that is relevant to the ROOT font size
+        - Can be thought of as percentages relevant to the root font size
+            - `1.2rem` is 120% of the root font size
+            - `0.5rem` is 50% of the root font size
+            - `.5rem`  is 50% of the root font size
+            - `1.337rem` is 133.7% of the root font size
+        - Common for especially font sites
+        - Sometimes used for icon sizes as well
+    - em - "em" units
+        - Relative to parent font size
+        - If the parent font size is "20px"
+            - 0.1em == 2px (10% of 20px)
+            - 1em == 20px (100% of 20px)
+            - 2em == 40px (200% of 20px)
+        - Pretty much the same as percentages when it comes to font size
+            - 1em works exactly like 100% *for text*
+        - Originally from how wide the "M" character is for a font
+        - Now in CSS it is just the font size
+        - Good use case: Icon images inside text elements
+            - Relevant to the text size of the parent
+
+- `vw` -  `vh`
+    - percentages of the viewport height and width in pixels
+    - values from 0 to 100
+    - viewport width
+        - sizing relative to the viewport width
+        - the parent size does not matter
+    - viewport height
+        - sizing relative to the viewport height
+        - the parent size does not matter
+    - Commonly used in creating full screen landing pages
+    - Also commonly used in full screen elements, such as
+        - cookie warnings
+        - overlay images
+        - overlay dialogs
+    - Also commonly used in positioning
+
+## Developer Tools! Devtools! Browser tools! Developer console!
+- Right click an element on the page and select "Inspect element" from the context menu
+- Alternatively, press F12 on your keyboard
+- Can be positioned in the bottom or the right of your browser
+- Can be detached and exist in a separate window from your browser
+- INSPECTOR tab
+    - HTML and CSS
+    - Edit CSS values
+    - Add new CSS rules and values
+    - Add new CSS blocks
+    - View the computed CSS values for an element
+    - View the Font of an element
+    - Edit HTML
+- NETWORK tab - shows you what is being loaded
+
+*Task time here*
+
+- Let us have a look at the CNN and the Immoscout24 websites

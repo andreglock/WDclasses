@@ -1,5 +1,8 @@
 # BDL Day 7 :)
-## GIT- Git tracks the version history of files
+
+## GIT
+
+- Git tracks the version history of files
 - The history of a project is a timeline containing sets of changes (commits)
 - Terminology
     - Commit = Set of changes to files
@@ -39,10 +42,15 @@
         11. Close the issue.
 - Live coding example 2: the same again, but twice!
     - Remember to update your local repository using `git pull`
-    
-## More git stuff- Git Remotes
+
+## More git stuff
+
+- Git Remotes
     - git works on repositories
     - you can have multiple repositories on your computer
     - you can have multiple repos in github
-    - one repository can have relations to other repositories- *Fork* Forking a repository means to get your own copy of the repository where you are in control!
-    - This is often done to get your own *remote* of a repository belonging to someone else
+    - one repository can have relations to other repositories
+
+- *Fork* Forking a repository means to get your own copy of the repository where you are in control!
+    - This is often done to get your own *remote* of someone elses repository
+

@@ -78,7 +78,20 @@
         - 1000-9999 for dialogs (cookie accept)
         - 10000-99999 for modals (alert, such as "you have signed out automatically")
 
-
-
-
-        
+## Positioning- Coordinate positioning
+        - Usually set with either "top" and "left" OR "bottom" and "right"
+- CSS `position`
+        - Often combined with coordinates
+        - `position: static;` - default value, element follows normal document flow
+        - `position: absolute;` - element is removed compltely from the normal flow 
+                - is positioned with coordinates
+                - the element takes no space in normal document flow
+        - `position: relative;` - element is positioned relative to itself
+                - the space taken up by the element is taken normally
+        - `position: fixed;` - removed from normal document flow, relative to the viewport
+                - is positioned with coordinates
+                - ignores parent/ancestor scrolling
+        - `position: sticky;`
+                - not supported by *everything*
+                - is positioned with coordinates
+                - ignores parent/ancestor scrolling until it hits the viewport edge, then it kind of becomes fixed

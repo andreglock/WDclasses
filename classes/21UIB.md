@@ -9,7 +9,7 @@
 - FontAwesome is a Font icon library - fonts are vectors!
 - Not the only Icon Font Library
     - Self-study: alternatives to FA; flaticon, thenounproject.com
-
+    
 ## Everything is a Box!
 
 - The Box Model
@@ -35,4 +35,3 @@
         - `vertical-align: middle`
             - Aligns the inline-block  element within its current line of text (often moves the line of text a bit too!)
     - (((( Some blocks behave like in between inline amd inline-blocks, like images ))))
-

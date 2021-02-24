@@ -1,27 +1,31 @@
-# UIB - Elements
+# UIB Content - a11y
 
-## Elements- Two types of elements
-  - Block
-    - Always start (on) a new line
-    - Take up the full width available
-      - stretch out to the left and to the right as much as they can
-      - meaning it has a width of 100% by default
-      - the height is defined by the content automatically OR by the developer
-  - Inline
-    - Start within an existing block-level element (they don't start a new line)### BLOCKS- main, nav, div, p, hr, lists(ul, ol, li), h1-h6, pre
-- <section>
-    - a section of the page which doesn't have a more specific semantic element to use
-    - often these would have a heading
-- <article>
-    - a self-contained composition in a page, which is intended to be independently redistributable or reusable
-- <aside>
-    - a part of a document where the content is only indirectly related to the main content
-- <header>
-    - defines the top part of a page
-    - often repeated in many pages
-- <footer>
-    - defines the bottom part of a page
-    - often repeated in many pages- SO SO SO MANY MORE!### INLINE- span, a, em, br, img
-- strong, b
-- sup and sub
-- input
+## Accessibility
+- Goal: provide equal access and opportunity to people with disabilities
+- Goal: make the web accessible
+- Often shortened to a11y in text (A, 11 characters, Y)
+- Semantic elements have good a11y support already
+	- Content elements with a meaning
+	- "h1" instead of "div"
+	- "p" instead of "div"
+	- "button" instead "div"
+	- real inline elements instead of "span"
+- Semantically important attributes
+	- "alt" for images
+	- Good for screen readers
+	- Also good for SEO!
+- Screen reader example: ChromeVox extensions
+	- Operating systems have their own screen readers too
+	- NVDA (windows)
+	- Orca (linux)
+	- Voiceover (osx)
+	- WebAnywhere
+- Websites should be usable with just the keyboard too!
+- Use ARIA attributes to help create an accessible webnsite
+
+
+
+
+
+
+

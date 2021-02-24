@@ -1,95 +1,106 @@
-# UIB day 4
+# UIB content 2
 
-## Updating a forked repository from the original
- - Automatic
-    - Create a new Pull Request in GitHub
-    - Click on "Switch base", if it is available to you#
-    - After merging the Pull Request, update your local repository using git pull
- - Manual
-    - Copy the changes manually
-    - use git commands (Search Google for assistance here)## CSS Units
- - CSS has a lot of units to use
- - We will be looking at "px", "%", "em", "rem", "vw", "vh"
- - New CSS: `width`, `height`, `font-size`
- - New HTML: `<div>`
-    - No semantic meaning
-    - Container element, wrapper
-    - Often deeply nested
-    - Very very common in the real world
-- Pixels or `px`
-    - Static length or static size
-    - Basically, these are the unit of the web
-    - Reference pixels, Not Device pixels
-        - Mobile phone with 4k
-        - https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel
-        - Affected by zoom!
-    - Values smaller than one pixel can exist and are fairly common
-        - For example `font-size: 15.2px;`
-- Percentages or `%`
-    - Dependant on the parent
-    - Dynamic length or dynamic size
-    - Affected by zoom levels
-    - You can be more accurate than 1%, so "50.04%" is valid
-- For most users, the default font size of a browser is "16px"
-    - The root font size of a page is defined by the `<html>` element
-    - You can define this yourself with CSS
-    - The font settings _cascade_ down from the `<html>` element
-- Font size with percentages
-    - Like widths, these are dependent on the parent!
-    - Gets complicated with nesting!- `em` and the `rem` units
-    - Typography units
-    - Often used in font sizing, very useful there
-    - Not common for defining layouts
-        - Except for a few exceptions
-    - Units that come from typesetting originally
-    - rem - "root em" units
-        - Relative to root font size
-        - Can be tricky to design around if you don't have a set root font size
-            - Users might have different default font sizes
-        - A size that is relevant to the ROOT font size
-        - Can be thought of as percentages relevant to the root font size
-            - `1.2rem` is 120% of the root font size
-            - `0.5rem` is 50% of the root font size
-            - `.5rem`  is 50% of the root font size
-            - `1.337rem` is 133.7% of the root font size
-        - Common for especially font sites
-        - Sometimes used for icon sizes as well
-    - em - "em" units
-        - Relative to parent font size
-        - If the parent font size is "20px"
-            - 0.1em == 2px (10% of 20px)
-            - 1em == 20px (100% of 20px)
-            - 2em == 40px (200% of 20px)
-        - Pretty much the same as percentages when it comes to font size
-            - 1em works exactly like 100% *for text*
-        - Originally from how wide the "M" character is for a font
-        - Now in CSS it is just the font size
-        - Good use case: Icon images inside text elements
-            - Relevant to the text size of the parent- `vw` -  `vh`
-    - percentages of the viewport height and width in pixels
-    - values from 0 to 100
-    - viewport width
-        - sizing relative to the viewport width
-        - the parent size does not matter
-    - viewport height
-        - sizing relative to the viewport height
-        - the parent size does not matter
-    - Commonly used in creating full screen landing pages
-    - Also commonly used in full screen elements, such as
-        - cookie warnings
-        - overlay images
-        - overlay dialogs
-    - Also commonly used in positioning## Developer Tools! Devtools! Browser tools! Developer console!
-- Right click an element on the page and select "Inspect element" from the context menu
-- Alternatively, press F12 on your keyboard
-- Can be positioned in the bottom or the right of your browser
-- Can be detached and exist in a separate window from your browser
-- INSPECTOR tab
-    - HTML and CSS
-    - Edit CSS values
-    - Add new CSS rules and values
-    - Add new CSS blocks
-    - View the computed CSS values for an element
-    - View the Font of an element
-    - Edit HTML
-- NETWORK tab - shows you what is being loaded
+## New CSS Stuff!
+- Elements with an "id" attribute
+    - New HTML attribute called `id`
+    - One element can only have one ID
+    - *Unique*: One ID *SHOULD* only be used by one element in an HTML file
+    - Values are alphanumeric (alphabet and numbers)
+    - Avoid ü ö ä etc, keep them from a to z (american alphabet...)
+    - Generally, these tend to be in english
+    - It's good to keep them descriptive, even if they are a bit long
+    - Getting more rare, still used but not super much
+    - ID is more powerful than the class when it comes to CSS
+    - ID CSS overrules class CSS
+- Elements with "class"
+    - New HTML attribute called `class`
+    - You can have multiple elements in the same HTML file with the same class
+    - You can have multiple classes in the same HTML element (tag)
+        - Different classes for one element are separated with a space
+            - For example: `class="important hilight"`
+    - Values are alphanumeric (alphabet and numbers)
+    - Avoid ü ö ä etc, keep them from a to z (american alphabet)
+    - Generally, these tend to be in english
+    - It's good to keep them descriptive, even if they are a bit long
+    - Much more popular
+- CSS Selectors
+    - ID: `id="title"` --> `#title`
+    - Class: `class="important"` --> `.important`
+
+## New css selector type
+- "Descendent combinator" CSS selector
+- Looks like this: `ol li { color: blue; }`
+    - Here "li" is descended from "ol"
+
+## NEW CSS!
+- `font-weight` -- defines the font weight
+    - Values are usually "bold" or "normal", but can be "bolder" for example
+- `background-color` -- defines the background color
+    - Used like "color"
+- `list-style-type` -- defines how the "bullet points" of a LIST look like
+    - Values like `circle` and `square`
+    - Also values like `"- "` work too!
+        - Any text characters
+        - Emojis are normal text characters! (Unicode)
+        - 😺
+
+## HTML - (hyper)links
+- Anchor element: `<a>`
+    - "a" is the element
+    - "<a>" is the tag
+- The target of a link is defined in an attribute called `href`
+    - `<a href="staff.html">Staff</a>`
+- Originally used just for jumping around inside one file, kind of like bookmarks inside a PDF
+    - Still can be used in this way by referencing IDs!
+    - `<a href="top">Click to go up</a>`
+- Now, more commonly they link between files
+    - `<a href="staff.html">Staff</a>`
+- Can be used to link between different websites! (External sites)
+    - `<a href="https://wwww.google.de/">Googl</a>`
+- Can also be used to trigger different kinds of functionality, like sending an email
+    - `<a href="mailto:joel.peltonen@gmail.com">Email Joel</a>`
+        - mailto is a protocol!
+        - the href here is a URI (Universal Resource Identifier)
+        - Not a URL
+    - Other protocols (many!) exist as well, such as "tel"
+
+
+
+## Color in CSS
+- Colors can be defined in many ways
+    - Named colors / keywords: pink, blue, purple, silver, palegoldenrod...
+    - Hex colors / Hexadecimal colors: #FF   00     00
+                                       255   00     00
+                                       RED   GREEN  BLUE
+    - rgb(255, 0, 0);
+- Transparency
+    - CSS property
+        - `opacity` -- "How opaque something is"
+        - Ranges from 1.00 to 0.00, for example "0.50"
+    - CSS color
+        - rgba - Red,   Green,  Blue,   Alpha
+                 0-255, 0-255,  0-255,  0-1
+- Other color schemes
+    - Self study
+    - CMYK
+    - HSL
+    - HSLA
+
+## Important! 
+    In CSS it matters in what order your declarations are in
+
+## CSS Pseudo classes
+- link states are a great example of these!
+    - visited link
+        - CSS with pseudoclass: `a:visited { color: black; }`
+    - active link
+        - CSS with pseudoclass: `a:active { color: black; }`
+    - hovered link#
+        - CSS with pseudoclass: `a:hover { color: red; }`+
+- Try out link pseudoclass styles in different orders
+    - visited after active
+    - active after visited
+    - hover before either
+    - hover after either 
+    - etc
+    - the order matters!

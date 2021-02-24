@@ -9,6 +9,7 @@
 </head>
     <body>
         <div class="sidenav">
+            <a href="../index.html" class="home"></a>
             <a href="01BDL.html">BDL 1</a>
             <a href="02BDL.html">BDL 2</a>
             <a href="03BDL.html">BDL 3</a>
@@ -16,151 +17,191 @@
             <a href="05BDL.html">BDL 5</a>
             <a href="06BDL.html">BDL 6</a>
             <a href="07BDL.html">BDL 7</a>
-            <a href="09UIB.html">UIB 1</a>
-            <a href="10UIB.html">UIB 2</a>
-            <a href="11UIB.html">UIB 3</a>
-            <a href="12UIB.html">UIB 4</a>
-            <a href="13UIB.html">UIB 5</a>
-            <a href="14UIB.html">UIB 6</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
         </div>
         <div id="content">
-<h1>UIB day 4</h1>
-<h2>Updating a forked repository from the original</h2>
+<h1>UIB content 2</h1>
+<h2>New CSS Stuff!</h2>
 <ul>
-<li>Automatic<ul>
-<li>Create a new Pull Request in GitHub</li>
-<li>Click on "Switch base", if it is available to you#</li>
-<li>After merging the Pull Request, update your local repository using git pull</li>
+<li>Elements with an "id" attribute<ul>
+<li>New HTML attribute called <code>id</code></li>
+<li>One element can only have one ID</li>
+<li><em>Unique</em>: One ID <em>SHOULD</em> only be used by one element in an HTML file</li>
+<li>Values are alphanumeric (alphabet and numbers)</li>
+<li>Avoid ü ö ä etc, keep them from a to z (american alphabet...)</li>
+<li>Generally, these tend to be in english</li>
+<li>It's good to keep them descriptive, even if they are a bit long</li>
+<li>Getting more rare, still used but not super much</li>
+<li>ID is more powerful than the class when it comes to CSS</li>
+<li>ID CSS overrules class CSS</li>
 </ul>
 </li>
-<li>Manual<ul>
-<li>Copy the changes manually</li>
-<li>use git commands (Search Google for assistance here)## CSS Units</li>
-</ul>
-</li>
-<li>CSS has a lot of units to use</li>
-<li>We will be looking at "px", "%", "em", "rem", "vw", "vh"</li>
-<li>New CSS: <code>width</code>, <code>height</code>, <code>font-size</code></li>
-<li>New HTML: <code>&lt;div&gt;</code><ul>
-<li>No semantic meaning</li>
-<li>Container element, wrapper</li>
-<li>Often deeply nested</li>
-<li>Very very common in the real world</li>
-</ul>
-</li>
-<li>Pixels or <code>px</code><ul>
-<li>Static length or static size</li>
-<li>Basically, these are the unit of the web</li>
-<li>Reference pixels, Not Device pixels<ul>
-<li>Mobile phone with 4k</li>
-<li>https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel</li>
-<li>Affected by zoom!</li>
-</ul>
-</li>
-<li>Values smaller than one pixel can exist and are fairly common<ul>
-<li>For example <code>font-size: 15.2px;</code></li>
+<li>Elements with "class"<ul>
+<li>New HTML attribute called <code>class</code></li>
+<li>You can have multiple elements in the same HTML file with the same class</li>
+<li>You can have multiple classes in the same HTML element (tag)<ul>
+<li>Different classes for one element are separated with a space<ul>
+<li>For example: <code>class="important hilight"</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Percentages or <code>%</code><ul>
-<li>Dependant on the parent</li>
-<li>Dynamic length or dynamic size</li>
-<li>Affected by zoom levels</li>
-<li>You can be more accurate than 1%, so "50.04%" is valid</li>
+<li>Values are alphanumeric (alphabet and numbers)</li>
+<li>Avoid ü ö ä etc, keep them from a to z (american alphabet)</li>
+<li>Generally, these tend to be in english</li>
+<li>It's good to keep them descriptive, even if they are a bit long</li>
+<li>Much more popular</li>
 </ul>
 </li>
-<li>For most users, the default font size of a browser is "16px"<ul>
-<li>The root font size of a page is defined by the <code>&lt;html&gt;</code> element</li>
-<li>You can define this yourself with CSS</li>
-<li>The font settings <em>cascade</em> down from the <code>&lt;html&gt;</code> element</li>
+<li>CSS Selectors<ul>
+<li>ID: <code>id="title"</code> --&gt; <code>#title</code></li>
+<li>Class: <code>class="important"</code> --&gt; <code>.important</code></li>
 </ul>
 </li>
-<li>Font size with percentages<ul>
-<li>Like widths, these are dependent on the parent!</li>
-<li>Gets complicated with nesting!- <code>em</code> and the <code>rem</code> units</li>
-<li>Typography units</li>
-<li>Often used in font sizing, very useful there</li>
-<li>Not common for defining layouts<ul>
-<li>Except for a few exceptions</li>
+</ul>
+<h2>New css selector type</h2>
+<ul>
+<li>"Descendent combinator" CSS selector</li>
+<li>Looks like this: <code>ol li { color: blue; }</code><ul>
+<li>Here "li" is descended from "ol"</li>
 </ul>
 </li>
-<li>Units that come from typesetting originally</li>
-<li>rem - "root em" units<ul>
-<li>Relative to root font size</li>
-<li>Can be tricky to design around if you don't have a set root font size<ul>
-<li>Users might have different default font sizes</li>
+</ul>
+<h2>NEW CSS!</h2>
+<ul>
+<li><code>font-weight</code> -- defines the font weight<ul>
+<li>Values are usually "bold" or "normal", but can be "bolder" for example</li>
 </ul>
 </li>
-<li>A size that is relevant to the ROOT font size</li>
-<li>Can be thought of as percentages relevant to the root font size<ul>
-<li><code>1.2rem</code> is 120% of the root font size</li>
-<li><code>0.5rem</code> is 50% of the root font size</li>
-<li><code>.5rem</code>  is 50% of the root font size</li>
-<li><code>1.337rem</code> is 133.7% of the root font size</li>
+<li><code>background-color</code> -- defines the background color<ul>
+<li>Used like "color"</li>
 </ul>
 </li>
-<li>Common for especially font sites</li>
-<li>Sometimes used for icon sizes as well</li>
-</ul>
-</li>
-<li>em - "em" units<ul>
-<li>Relative to parent font size</li>
-<li>If the parent font size is "20px"<ul>
-<li>0.1em == 2px (10% of 20px)</li>
-<li>1em == 20px (100% of 20px)</li>
-<li>2em == 40px (200% of 20px)</li>
-</ul>
-</li>
-<li>Pretty much the same as percentages when it comes to font size<ul>
-<li>1em works exactly like 100% <em>for text</em></li>
-</ul>
-</li>
-<li>Originally from how wide the "M" character is for a font</li>
-<li>Now in CSS it is just the font size</li>
-<li>Good use case: Icon images inside text elements<ul>
-<li>Relevant to the text size of the parent- <code>vw</code> -  <code>vh</code></li>
+<li><code>list-style-type</code> -- defines how the "bullet points" of a LIST look like<ul>
+<li>Values like <code>circle</code> and <code>square</code></li>
+<li>Also values like <code>"- "</code> work too!<ul>
+<li>Any text characters</li>
+<li>Emojis are normal text characters! (Unicode)</li>
+<li>😺</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>percentages of the viewport height and width in pixels</li>
-<li>values from 0 to 100</li>
-<li>viewport width<ul>
-<li>sizing relative to the viewport width</li>
-<li>the parent size does not matter</li>
+</ul>
+<h2>HTML - (hyper)links</h2>
+<ul>
+<li>Anchor element: <code>&lt;a&gt;</code><ul>
+<li>"a" is the element</li>
+<li>"<a>" is the tag</li>
 </ul>
 </li>
-<li>viewport height<ul>
-<li>sizing relative to the viewport height</li>
-<li>the parent size does not matter</li>
+<li>The target of a link is defined in an attribute called <code>href</code><ul>
+<li><code>&lt;a href="staff.html"&gt;Staff&lt;/a&gt;</code></li>
 </ul>
 </li>
-<li>Commonly used in creating full screen landing pages</li>
-<li>Also commonly used in full screen elements, such as<ul>
-<li>cookie warnings</li>
-<li>overlay images</li>
-<li>overlay dialogs</li>
+<li>Originally used just for jumping around inside one file, kind of like bookmarks inside a PDF<ul>
+<li>Still can be used in this way by referencing IDs!</li>
+<li><code>&lt;a href="top"&gt;Click to go up&lt;/a&gt;</code></li>
 </ul>
 </li>
-<li>Also commonly used in positioning## Developer Tools! Devtools! Browser tools! Developer console!</li>
+<li>Now, more commonly they link between files<ul>
+<li><code>&lt;a href="staff.html"&gt;Staff&lt;/a&gt;</code></li>
 </ul>
 </li>
-<li>Right click an element on the page and select "Inspect element" from the context menu</li>
-<li>Alternatively, press F12 on your keyboard</li>
-<li>Can be positioned in the bottom or the right of your browser</li>
-<li>Can be detached and exist in a separate window from your browser</li>
-<li>INSPECTOR tab<ul>
-<li>HTML and CSS</li>
-<li>Edit CSS values</li>
-<li>Add new CSS rules and values</li>
-<li>Add new CSS blocks</li>
-<li>View the computed CSS values for an element</li>
-<li>View the Font of an element</li>
-<li>Edit HTML</li>
+<li>Can be used to link between different websites! (External sites)<ul>
+<li><code>&lt;a href="https://wwww.google.de/"&gt;Googl&lt;/a&gt;</code></li>
 </ul>
 </li>
-<li>NETWORK tab - shows you what is being loaded</li>
+<li>Can also be used to trigger different kinds of functionality, like sending an email<ul>
+<li><code>&lt;a href="mailto:joel.peltonen@gmail.com"&gt;Email Joel&lt;/a&gt;</code><ul>
+<li>mailto is a protocol!</li>
+<li>the href here is a URI (Universal Resource Identifier)</li>
+<li>Not a URL</li>
+</ul>
+</li>
+<li>Other protocols (many!) exist as well, such as "tel"</li>
+</ul>
+</li>
+</ul>
+<h2>Color in CSS</h2>
+<ul>
+<li>Colors can be defined in many ways<ul>
+<li>Named colors / keywords: pink, blue, purple, silver, palegoldenrod...</li>
+<li>Hex colors / Hexadecimal colors: #FF   00     00
+                                   255   00     00
+                                   RED   GREEN  BLUE</li>
+<li>rgb(255, 0, 0);</li>
+</ul>
+</li>
+<li>Transparency<ul>
+<li>CSS property<ul>
+<li><code>opacity</code> -- "How opaque something is"</li>
+<li>Ranges from 1.00 to 0.00, for example "0.50"</li>
+</ul>
+</li>
+<li>CSS color<ul>
+<li>rgba - Red,   Green,  Blue,   Alpha
+         0-255, 0-255,  0-255,  0-1</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Other color schemes<ul>
+<li>Self study</li>
+<li>CMYK</li>
+<li>HSL</li>
+<li>HSLA</li>
+</ul>
+</li>
+</ul>
+<h2>Important!</h2>
+<pre><code>In CSS it matters in what order your declarations are in
+</code></pre>
+<h2>CSS Pseudo classes</h2>
+<ul>
+<li>link states are a great example of these!<ul>
+<li>visited link<ul>
+<li>CSS with pseudoclass: <code>a:visited { color: black; }</code></li>
+</ul>
+</li>
+<li>active link<ul>
+<li>CSS with pseudoclass: <code>a:active { color: black; }</code></li>
+</ul>
+</li>
+<li>hovered link#<ul>
+<li>CSS with pseudoclass: <code>a:hover { color: red; }</code>+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Try out link pseudoclass styles in different orders<ul>
+<li>visited after active</li>
+<li>active after visited</li>
+<li>hover before either</li>
+<li>hover after either </li>
+<li>etc</li>
+<li>the order matters!</li>
+</ul>
+</li>
 </ul>
         </div>
     </body>

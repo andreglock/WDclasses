@@ -1,94 +1,66 @@
-# UIB content - part 2
+# UIB Content - part 1
 
-## New CSS Stuff!
-- Elements with an "id" attribute
-    - New HTML attribute called `id`
-    - One element can only have one ID
-    - *Unique*: One ID *SHOULD* only be used by one element in an HTML file
-    - Values are alphanumeric (alphabet and numbers)
-    - Avoid ü ö ä etc, keep them from a to z (american alphabet...)
-    - Generally, these tend to be in english
-    - It's good to keep them descriptive, even if they are a bit long
-    - Getting more rare, still used but not super much
-    - ID is more powerful than the class when it comes to CSS
-    - ID CSS overrules class CSS
-- Elements with "class"
-    - New HTML attribute called `class`
-    - You can have multiple elements in the same HTML file with the same class
-    - You can have multiple classes in the same HTML element (tag)
-        - Different classes for one element are separated with a space
-            - For example: `class="important hilight"`
-    - Values are alphanumeric (alphabet and numbers)
-    - Avoid ü ö ä etc, keep them from a to z (american alphabet)
-    - Generally, these tend to be in english
-    - It's good to keep them descriptive, even if they are a bit long
-    - Much more popular
-- CSS Selectors
-    - ID: `id="title"` --> `#title`
-    - Class: `class="important"` --> `.important`## New css selector type
-- "Descendent combinator" CSS selector
-- Looks like this: `ol li { color: blue; }`
-    - Here "li" is descended from "ol"## NEW CSS!
-- `font-weight` -- defines the font weight
-    - Values are usually "bold" or "normal", but can be "bolder" for example
-- `background-color` -- defines the background color
-    - Used like "color"
-- `list-style-type` -- defines how the "bullet points" of a LIST look like
-    - Values like `circle` and `square`
-    - Also values like `"- "` work too!
-        - Any text characters
-        - Emojis are normal text characters! (Unicode)
-        - 😺## HTML - (hyper)links
-- Anchor element: `<a>`
-    - "a" is the element
-    - "<a>" is the tag
-- The target of a link is defined in an attribute called `href`
-    - `<a href="staff.html">Staff</a>`
-- Originally used just for jumping around inside one file, kind of like bookmarks inside a PDF
-    - Still can be used in this way by referencing IDs!
-    - `<a href="top">Click to go up</a>`
-- Now, more commonly they link between files
-    - `<a href="staff.html">Staff</a>`
-- Can be used to link between different websites! (External sites)
-    - `<a href="https://wwww.google.de/">Googl</a>`
-- Can also be used to trigger different kinds of functionality, like sending an email
-    - `<a href="mailto:joel.peltonen@gmail.com">Email Joel</a>`
-        - mailto is a protocol!
-        - the href here is a URI (Universal Resource Identifier)
-        - Not a URL
-    - Other protocols (many!) exist as well, such as "tel"
+## Separation of concerns
 
-## Color in CSS
-- Colors can be defined in many ways
-    - Named colors / keywords: pink, blue, purple, silver, palegoldenrod...
-    - Hex colors / Hexadecimal colors: #FF   00     00
-                                       255   00     00
-                                       RED   GREEN  BLUE
-    - rgb(255, 0, 0);
-- Transparency
-    - CSS property
-        - `opacity` -- "How opaque something is"
-        - Ranges from 1.00 to 0.00, for example "0.50"
-    - CSS color
-        - rgba - Red,   Green,  Blue,   Alpha
-                 0-255, 0-255,  0-255,  0-1
-- Other color schemes
-    - Self study
-    - CMYK
-    - HSL
-    - HSLA## Important! 
-    In CSS it matters in what order your declarations are in## CSS Pseudo classes
-- link states are a great example of these!
-    - visited link
-        - CSS with pseudoclass: `a:visited { color: black; }`
-    - active link
-        - CSS with pseudoclass: `a:active { color: black; }`
-    - hovered link#
-        - CSS with pseudoclass: `a:hover { color: red; }`+
-- Try out link pseudoclass styles in different orders
-    - visited after active
-    - active after visited
-    - hover before either
-    - hover after either 
-    - etc
-    - the order matters!
+- It is a good idea to keep structure (HTML) and visuals (CSS) separate
+    - Separate people often work on these
+    - Better organization
+    - With external CSS; you only have to update one place
+    - It is also faster to load websites when the files are separate (cache; caching)
+    - It's clearer
+
+- ! CONTENT IS KING !
+    - With the exception of art websites, the content is what truly matters most
+    - Generally, it is better to have fantastic content than fantastic visuals
+    - However, visuals make the content better too!
+    - The structure of content is important for Search engines and humans
+    - HTML and CSS are *strongly* connected, and sometimes HTML needs to accommodate CSS
+
+- Semantics
+    - The art of using the right tag in the right place
+    - This can be difficult, depends on the situation
+    - Let us strive to do our best and select good elements!
+
+- This is where as a developer you develop your own skills with experience a lot!
+
+## HTML Continued
+- `title` HTML attribute, can be used in Many different tags (such as `p`)
+- `<br>` - Break row, mostly used inside paragraphs
+- `<hr>` - Horizontal rule, it draws a line! Useful for separating content
+- `<pre></pre>` - Preformatted text!
+    - By default, uses a Monospaced font
+    - Preserves whitespace
+    - Often used for text art for example
+- LISTS
+    - `<ul>` Unorganized list
+    - `<ol>` Organized list
+    - `<li>` List item
+    - Often nested within each other!
+- Often projects or companies have their own style guide
+    - For example https://google.github.io/styleguide/htmlcssguide.html
+    - Personally, I just use my own judgement
+    - HTML style varies a bit from developer to developer
+    - Old project? Follow the style that is already there
+- Indentation and nice code is important
+- Especially when looking at the original source
+
+## CSS - "Cascading Style Sheets"
+- Three types
+    - External (link tag)
+    - Internal (style tag)
+    - Inline (style attribute)
+- Example: `p { color: red; }`
+    - Here `p` is a selector
+    - Here `{ color: red; }` is the declaration
+    - Here `color` is the property
+    - Here `red` is the value
+- CSS can be applied in multiple different ways at the same time
+    - (internal, external and inline)
+    - example: dw.com has all three in use at the same time
+- New thing: commenting out CSS code!
+    - Use this style: /* CSS here */
+    - VSCode shortcut: Ctrl + Shift + 7
+- Reminder: "Cascading"
+    - Styles cascade down from parent element to descendants
+    - For example, the Body can have a red color
+    - And then all of its descendents will also be red

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="../index.html" class="home"></a>
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="05BDL.html">BDL 5</a>
+            <a href="06BDL.html">BDL 6</a>
+            <a href="07BDL.html">BDL 7</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
+        </div>
+        <div id="content">
+<h1>UI Basics - data - Tables are awesome!!</h1>
+<h2>Organizing Data in Tables</h2>
+<ul>
+<li>Tables are only for tabular data, never for layout</li>
+<li>This was done back in the bad old days, even before float layouts</li>
+<li>Bad for accessibility, Not flexible</li>
+<li>Elements</li>
+<li><code>&lt;table&gt;</code> -&gt; element that has <code>display: table</code> and is semantically a table</li>
+<li><code>&lt;tr&gt;</code> and <code>&lt;td&gt;</code></li>
+<li><code>&lt;thead&gt;</code></li>
+<li><code>&lt;tbody&gt;</code></li>
+<li><code>&lt;tfoot&gt;</code></li>
+<li><code>&lt;th scope=[...]&gt;</code><ul>
+<li>scope used just for screen readers, but can be targeted with CSS attribute selectors</li>
+</ul>
+</li>
+<li>Faker VSCode extension</li>
+<li>Spanning rows and columns - <code>&lt;td rowspan=""...""&gt;</code>, <code>&lt;td colspan=""...""&gt;</code></li>
+<li><code>&lt;caption&gt;</code> (optional)</li>
+<li>Don't use the border="" attribute (or other deprecated attributes)</li>
+</ul>
+<h2>Styling Tables</h2>
+<ul>
+<li>Borders with css</li>
+<li>border-collapse: collapse; OR border-spacing: 0.5rem; &lt;-- for the table</li>
+<li>
+<p>border: 1px solid #999; &lt;-------------------------------- for the cells</p>
+</li>
+<li>
+<p>Zebra stripes using <code>pseudo child selectors</code></p>
+</li>
+<li>Pseudo child selectors (tr:first-child means that when the TR is the first child)</li>
+<li><code>:first-child</code></li>
+<li><code>:last-child</code></li>
+<li>
+<p><code>:nth-child() { ... }</code></p>
+<ul>
+<li>even, odd, 3, 3n, 3n+1</li>
+<li>for example
+    tr:nth-child(even) td {
+        background-color: #ddd;
+    }</li>
+</ul>
+</li>
+<li>
+<p>Easy (easier) layout with <code>table-layout: fixed</code></p>
+</li>
+<li>Additional info with <caption>
+    <table style="caption-side: bottom;">
+      <caption>Table 1.1 Customers</caption>
+      <tr>
+      ---</li>
+<li>Caption placement with <code>caption-side</code> bottom/top</li>
+</ul>
+<p><strong>Further reading</strong>
+  https://css-tricks.com/complete-guide-table-element/
+  https://css-tricks.com/fixing-tables-long-strings/</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="../index.html" class="home"></a>
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="05BDL.html">BDL 5</a>
+            <a href="06BDL.html">BDL 6</a>
+            <a href="07BDL.html">BDL 7</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
+        </div>
+        <div id="content">
+<h1>UIB - Layouts - Flexbox 1</h1>
+<h2>Planning our layout</h2>
+<ul>
+<li>You might start with a completely empty table, just an idea or a concept</li>
+<li>
+<p>Infinite ways to start, here is one
+        1. Draw a flowchart, how will the user accomplish things?
+                - Analog or Digital
+                - Figma, Draw.io
+        2. Draw a rough pen-and paper wireframe of the key views
+                - This could include mobile views and desktop views
+                - Actual pen and paper, Mouse and Gimp or even Figma
+        3. Draw a digital wireframe of the pages
+                - Figma
+                - Might show to clients, might help sales
+        4. Draw a full design (or create a full design system)
+                - Figma again, perhaps? Sketch?
+        5. Implement that design etc</p>
+</li>
+<li>
+<p>As web professionals, the border between Designer and Developer
+        is not super clear cut</p>
+</li>
+<li>
+<p>Wireframe
+        - Like a rough sketch, no colors, no real content maybe etc.
+        - Different kinds of wireframes from lofi to hifi</p>
+</li>
+<li>
+<p>In big projects, often you will continuously do parts 1-5 at the same time</p>
+</li>
+<li>Digital wireframing with Figma for example</li>
+<li>Figma
+        - Digital Wireframing, charts, websites, design systems and more
+        - Needs registering
+        - Very collaborative, many users can work on the same project
+                - And share their work too!
+        - A huge library of templates/toolkits that you can use and buy</li>
+</ul>
+<h2>Flexbox</h2>
+<ul>
+<li>"Flexible box model"</li>
+<li>Display value for boxes, often divs / sections etc</li>
+<li>"flex" is another value for <code>display</code>; <code>display: flex;</code>
+        - The parent works like a block element
+        - Automatically creates a "flex container"
+        - All the child elements become its "flex items"</li>
+<li>The Flex container tries its best to keep its items in one line
+        - Unless otherwise instructed!</li>
+<li>flex-wrap: wrap;
+        - When the Flex items will not fit the container,
+           they will wrap to the next line
+        - Default is nowrap</li>
+<li>flex-direction: column;
+        - Which direction do the items flow inside the flex container 
+        - "row" is the default</li>
+<li>
+<p>Shorthand for direction and wrap;
+        - <code>flex-flow: column wrap;</code></p>
+</li>
+<li>
+<p>justify-content -- for the main axis
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;</p>
+</li>
+<li>align-items -- for the cross-axis
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start; <br />
+        align-items: stretch; --- especially without height (row)</li>
+</ul>
+        </div>
+    </body>
+</html>

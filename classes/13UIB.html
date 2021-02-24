@@ -9,6 +9,7 @@
 </head>
     <body>
         <div class="sidenav">
+            <a href="../index.html" class="home"></a>
             <a href="01BDL.html">BDL 1</a>
             <a href="02BDL.html">BDL 2</a>
             <a href="03BDL.html">BDL 3</a>
@@ -16,163 +17,187 @@
             <a href="05BDL.html">BDL 5</a>
             <a href="06BDL.html">BDL 6</a>
             <a href="07BDL.html">BDL 7</a>
-            <a href="09UIB.html">UIB 1</a>
-            <a href="10UIB.html">UIB 2</a>
-            <a href="11UIB.html">UIB 3</a>
-            <a href="12UIB.html">UIB 4</a>
-            <a href="13UIB.html">UIB 5</a>
-            <a href="14UIB.html">UIB 6</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
         </div>
         <div id="content">
-<h1>UIB - Images</h1>
-<h2>Basic HTML, CSS with images</h2>
+<h1>UIB day 4</h1>
+<h2>Updating a forked repository from the original</h2>
 <ul>
-<li>Downloading images<ul>
-<li>Context menu depends on what thing you rightclicked</li>
-<li>Normal images have a "Save image as" option</li>
+<li>Automatic<ul>
+<li>Create a new Pull Request in GitHub</li>
+<li>Click on "Switch base", if it is available to you#</li>
+<li>After merging the Pull Request, update your local repository using git pull</li>
 </ul>
 </li>
-<li>Normal HTML images: <code>&lt;img src="image.jpg2" alt="Here!"&gt;</code><ul>
-<li>The ALT attribute is important<ul>
-<li>Provides a text alternative if the image doesn't work</li>
-<li>Especially needed if the user has a screen reader</li>
-<li>If the image is broken or loads very very slowly, this can provide context too</li>
+<li>Manual<ul>
+<li>Copy the changes manually</li>
+<li>use git commands (Search Google for assistance here)</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>Width and height<ul>
-<li>You can add width and height as attributes<ul>
-<li><code>&lt;img src="image.jpg" alt="Here!" width="200" height="100"&gt;</code><ul>
-<li>No units!</li>
+<h2>CSS Units</h2>
+<ul>
+<li>CSS has a lot of units to use</li>
+<li>We will be looking at "px", "%", "em", "rem", "vw", "vh"</li>
+<li>New CSS: <code>width</code>, <code>height</code>, <code>font-size</code></li>
+<li>New HTML: <code>&lt;div&gt;</code><ul>
+<li>No semantic meaning</li>
+<li>Container element, wrapper</li>
+<li>Often deeply nested</li>
+<li>Very very common in the real world</li>
 </ul>
 </li>
-<li>Width/height when give as attributes (inline) they generally should be the real sizes of the image<ul>
-<li>Often used when images are part of the content</li>
+<li>Pixels or <code>px</code><ul>
+<li>Static length or static size</li>
+<li>Basically, these are the unit of the web</li>
+<li>Reference pixels, Not Device pixels<ul>
+<li>Mobile phone with 4k</li>
+<li>https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel</li>
+<li>Affected by zoom!</li>
 </ul>
 </li>
-<li>The space for the image is reserved</li>
-</ul>
-</li>
-<li>You can also use CSS to size images<ul>
-<li>Even when they have an inline size definition!</li>
-<li>CSS overrules HTML width/height</li>
-</ul>
-</li>
-<li>In the real world, in perfect examples, you have both defined<ul>
-<li>This is optimal for making the site work in all cases</li>
-</ul>
-</li>
-<li>Avoid having huge images squeezed into small spaces<ul>
-<li>This makes websites load very slowly</li>
-<li>Depending on the situation, you can have different sizes for the same images</li>
+<li>Values smaller than one pixel can exist and are fairly common<ul>
+<li>For example <code>font-size: 15.2px;</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Absolute and relative paths<ul>
-<li>Absolute: Works from anywhere (on your own website)<ul>
-<li>Full URL</li>
-<li><code>&lt;img src="https://www.example.org/image.jpg" alt="Example images!" width="200" height="100"&gt;</code></li>
+<li>Percentages or <code>%</code><ul>
+<li>Dependant on the parent</li>
+<li>Dynamic length or dynamic size</li>
+<li>Affected by zoom levels</li>
+<li>You can be more accurate than 1%, so "50.04%" is valid</li>
 </ul>
 </li>
-<li>Relative:<ul>
-<li>Relative to the current URL</li>
-<li>Local URL</li>
-<li><code>&lt;img src="./../pics/image.jpg" alt="Example images!" width="200" height="100"&gt;</code>## New CSS!</li>
+<li>For most users, the default font size of a browser is "16px"<ul>
+<li>The root font size of a page is defined by the <code>&lt;html&gt;</code> element</li>
+<li>You can define this yourself with CSS</li>
+<li>The font settings <em>cascade</em> down from the <code>&lt;html&gt;</code> element</li>
 </ul>
 </li>
+<li>
+<p>Font size with percentages</p>
+<ul>
+<li>Like widths, these are dependent on the parent!</li>
+<li>Gets complicated with nesting!</li>
 </ul>
 </li>
-<li>Borders!<ul>
-<li>Rule: <code>border</code></li>
-<li>Value: <code>[width] [style] [color]</code></li>
-<li>Width can be defined with <code>px</code>, <code>rem</code>, <code>em</code> etc CSS units</li>
-<li>Style is mandatory<ul>
-<li>solid</li>
-<li>dashed</li>
-<li>dotted</li>
-<li>double</li>
-<li>groove</li>
-<li>etc</li>
+<li>
+<p><code>em</code> and the <code>rem</code> units</p>
+<ul>
+<li>Typography units</li>
+<li>Often used in font sizing, very useful there</li>
+<li>Not common for defining layouts<ul>
+<li>Except for a few exceptions</li>
 </ul>
 </li>
-<li>Color is optional, defaults to current font color<ul>
-<li>Use the usual CSS color rules (named, hex, rgb, etc...)</li>
+<li>Units that come from typesetting originally</li>
+<li>rem - "root em" units<ul>
+<li>Relative to root font size</li>
+<li>Can be tricky to design around if you don't have a set root font size<ul>
+<li>Users might have different default font sizes</li>
 </ul>
 </li>
-<li>Can be defined separately as well<ul>
-<li><code>border-color</code></li>
-<li><code>border-width</code></li>
-<li>etc</li>
+<li>A size that is relevant to the ROOT font size</li>
+<li>Can be thought of as percentages relevant to the root font size<ul>
+<li><code>1.2rem</code> is 120% of the root font size</li>
+<li><code>0.5rem</code> is 50% of the root font size</li>
+<li><code>.5rem</code>  is 50% of the root font size</li>
+<li><code>1.337rem</code> is 133.7% of the root font size</li>
 </ul>
 </li>
+<li>Common for especially font sites</li>
+<li>Sometimes used for icon sizes as well</li>
 </ul>
 </li>
-<li>Border radius!<ul>
-<li><code>border-radius: 15px;</code></li>
-<li>most commonly done with pixels or with percentages<ul>
-<li><code>border-radius: 50%</code> - very common with profile pictures</li>
+<li>em - "em" units<ul>
+<li>Relative to parent font size</li>
+<li>If the parent font size is "20px"<ul>
+<li>0.1em == 2px (10% of 20px)</li>
+<li>1em == 20px (100% of 20px)</li>
+<li>2em == 40px (200% of 20px)</li>
 </ul>
 </li>
-<li>Value can be defined separately for the corners</li>
-<li><code>border-radius: 15px 5px 15px 5px;</code></li>
-<li><code>border-radius: 40% 15%;</code></li>
+<li>Pretty much the same as percentages when it comes to font size<ul>
+<li>1em works exactly like 100% <em>for text</em></li>
 </ul>
 </li>
-<li>Object-fit and Width AND height<ul>
-<li>for example, an image within a parent div</li>
-<li>makes the image fit in the specified way</li>
-<li><code>object-fit</code>, <code>width</code> and <code>height</code> are used together</li>
-<li>https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit        <code>&lt;div style="border: 1px solid red; width: 90vw; height: 200px;"&gt;
-        &lt;img
-            src="https://placekitten.com/500/200"
-            alt="Kitten"
-            style="object-fit: cover; width: 100%; height: 100%;"
-        &gt;
-    &lt;/div&gt;</code></li>
-<li>Can be used for other things than images too (videos)</li>
-</ul>
-</li>
-<li>Image links<ul>
-<li>Just wrap an image with an <code>a</code> link tag</li>
-</ul>
-</li>
-<li>Using float<ul>
-<li>CSS <code>float</code></li>
-<li>"float" is a thing that was designed to wrap text around an image</li>
-<li>Mostly to be used when you control the image and the text</li>
-<li>Avoid using float for <em>anything</em> else (design)## Image formatsMost common and important formats used in the web    - JPG<ul>
-<li>Raster</li>
-<li>Binary files</li>
-<li>This compression works best for photos</li>
-</ul>
-</li>
-<li>PNG<ul>
-<li>Raster</li>
-<li>Binary files</li>
-<li>This compression works best for logos/cartoons/screenshots/gradients etc (not photos)</li>
-<li>Can be transparent</li>
-<li>Can be animated (rare, sometimes .apng or .mpng etc)</li>
-</ul>
-</li>
-<li>GIF<ul>
-<li>Raster</li>
-<li>Binary files</li>
-<li>Can be transparent</li>
-<li>Can be animated</li>
-</ul>
-</li>
-<li>SVG<ul>
-<li>Inline or Normally</li>
-<li>Just text files (XML)</li>
-<li>Vector</li>
-<li>Can be transparent</li>
-<li>Can be animated (with CSS or JavaScript)</li>
+<li>Originally from how wide the "M" character is for a font</li>
+<li>Now in CSS it is just the font size</li>
+<li>Good use case: Icon images inside text elements<ul>
+<li>Relevant to the text size of the parent</li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<p><code>vw</code> -  <code>vh</code></p>
+<ul>
+<li>percentages of the viewport height and width in pixels</li>
+<li>values from 0 to 100</li>
+<li>viewport width<ul>
+<li>sizing relative to the viewport width</li>
+<li>the parent size does not matter</li>
+</ul>
+</li>
+<li>viewport height<ul>
+<li>sizing relative to the viewport height</li>
+<li>the parent size does not matter</li>
+</ul>
+</li>
+<li>Commonly used in creating full screen landing pages</li>
+<li>Also commonly used in full screen elements, such as<ul>
+<li>cookie warnings</li>
+<li>overlay images</li>
+<li>overlay dialogs</li>
+</ul>
+</li>
+<li>Also commonly used in positioning</li>
+</ul>
+</li>
+</ul>
+<h2>Developer Tools! Devtools! Browser tools! Developer console!</h2>
+<ul>
+<li>Right click an element on the page and select "Inspect element" from the context menu</li>
+<li>Alternatively, press F12 on your keyboard</li>
+<li>Can be positioned in the bottom or the right of your browser</li>
+<li>Can be detached and exist in a separate window from your browser</li>
+<li>INSPECTOR tab<ul>
+<li>HTML and CSS</li>
+<li>Edit CSS values</li>
+<li>Add new CSS rules and values</li>
+<li>Add new CSS blocks</li>
+<li>View the computed CSS values for an element</li>
+<li>View the Font of an element</li>
+<li>Edit HTML</li>
+</ul>
+</li>
+<li>NETWORK tab - shows you what is being loaded</li>
+</ul>
+<p><em>Task time here</em></p>
+<ul>
+<li>Let us have a look at the CNN and the Immoscout24 websites</li>
 </ul>
         </div>
     </body>

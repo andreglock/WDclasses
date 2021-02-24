@@ -1,192 +1,134 @@
-# BDL 5 Day 4
+# BDL 4 - Day 3
 
-## Core internet skills and knowledge
+## More commands
 
-Networking = communication with a shared set of protocols.
-Protocol = an agreement on how to do a very specific thing.
+Friends of cat
 
-Internet Protocol
-70s
-mail, file exchange, message boards
-Two kinds communication
-TCP Connected - like a telephone - used for example in games and some chat
-UDP Connectionless - like the post office - far more commons
+    $ tail output.log		# display the last lines of text in a file
+    $ tail -n 5 output.log	# display the last 5 lines of text in a file
 
-All computers on a network have an address
-IPv4 - IP addresses
-Can sometimes change, so they are dynamic
-You can buy static IP addresses, most servers have a static address that doesn't change
-Can be shared among many computers too
-192.168.1.1 <-- example
-0.0.0.0 - 255.255.255.255
-Public (used on the internet) and Private (used in local networks) addresses
-VPNs will hide or change your address
-You can run multiple websites in one IP address, on the same server
-We are slowly running out of addresses
-~3400 million addresses
-127.0.0.1 <- your local machine
+Have a peek at a file
 
-IPv6 - new shiny awesome unique addresses
-2001:db8::8a2e:370:1123
+    $ head # display the first lines of text in a file
 
-DNS - Domain name system
-Each IP address can have a human readable domain name
-google.de is a domain address
-one website can have multiple IP addresses, but usually just one domain
-The point of domains is to make Addresses easy to recognize and remember
-You can register domains for yourself
-Domain names are a big business
-Usually you pay per domain per year
-Domain name servers are run by multiple organizations over the globe
-When registering a domain, it takes a little bit of time for your new domain to be available
-When changing a domain, it takes time to change too
-[www.google.de](https://www.google.de) --> 19.22.55.12
+## Markdown
 
-You can check who owns a domain, or at least get some info on it
-[https://who.is/](https://who.is/)
+Markdown syntax Documentation: [Markdown Guide](https://www.markdownguide.org/basic-syntax)
 
-TLD Top Level Domain
-Examples
-.de
-.fi
-.tv -- tuvalu
-.com --- "commerce"
-.info
-.org --- "organization"
-.gov --- "government"
-You cannot register to every single TLD
-Domains are Mostly alphanumeric
-www.abcde1234689.com
-It is unusual to see a domain like www.üüüüüÄÖöÄ.com
+Super simple.
+Is rendered.
+Can be converted into HTML easily by renderers.
+Halfway between visual and code.
 
-Domains have Subdomains
-For example: www.google.de
-"www" is a subdomain
-website.amazon.de
-ww2.services.internet.bank.de
-mail.google.com
+![Les Horribles Cernettes](./Les_Horribles_Cernettes_in_1992.jpeg "Les Horribles Cernettes say hello")
 
-Hosts file
-Historically, before DNS we just had a hosts file
-120.5.1.1 jennyscomputer
-154.1.1.1 bobs-message-board
-In linux it#s at /etc
+Syntax examples
 
-All data transferred is between server and client
-
-URL
-Universal Resource Locator
-Web address
-example.org # simplest possible
-www.example.org # subdomain
-http://www.example.org # protocol part -- basic one; HyperText Transfer Protocol
-https://example.org # protocol;
-http://example.org:80 # the port --
-https://example.org:443 # the port for
-http://localhost:3000 # port 3000 is usually for NodeJS
-
-http://example.org/dogs # "dogs" here is part of the path, some kind of resource
-http://example.org/dogs.html # if you have an extension, it could be a file, but might not
-
-# could be a file, or could point to some logic
-http://example.org/dogs/search # "dogs/search" is part of the path, again some resource
-
-http://example.org/dogs/poodle?color=white&puppy=false&size=small
-[--query parameters---]
-Query parameters are separated first with a question mark ? and after that, with an &
+- Images are done using this syntax: `![Image Text Version](relative/path/to/image.jpg "What the image is")`
+- List
+	- Sublist 1
+		- SubSublist 1
+		- SubSublist 2
+	- Sublist 2
+- Text effect: **Bold** text
+- Text effect: __Bold__ text
+- Text effect: *Italic* text
+- Text effect: _Italic_ text
+- Text effects combo: **_Both_ effects**
+- Text effect: `Inline code blocks` like so!
+- Linking to an address: `[Link Text Here](address here)`
+- Headings
+	- `# Level 1`
+	- `## Level 2`
+	- `### Level 3 ... up until level 6`
+- Indented code blocks / preformatted text
+- Block quotes
+- Numbered lists:
+	1. Example Banana
+	1. Example Beet
+	1. Example Cherry
+	1. Example Potato
+	1. Example Curry
 
 
-http://example.org/dogs/poodle?color=white#bottom # the fragment part
-# could be a part of the page
-# could be some strange logic..
-# always the last part
+Example of a Code Block:
 
-URLs are basically always unicode, meaning that symbols need to be Encoded.
+	$ mkdir projects/newproject
+	$ cd projects/newproject
+	$ something_else_amazing
 
-URL encoding looks like this: "green apple" -----encoding---> "green%20apple"
-"green%20apple" ---decoding---> "green apple"
+> Albert Einstein once said,
 
-Ports
-80 - used for normal
-443 - used for
-22 - used for SSH connections
+> "HTML Rocks"
 
-A word on publishing
+> Something
 
+TASKS
 
-You have a website. How do you publish it?
-
-### FTP - File Transfer Protocol
-The Oldschool way of publishing
-Just copy the files to the server, usually with a graphical program
-
-### SSH - Secure SHell
-Copying files manually or over git
-... But mostly used for connecting to a server.
-To transfer files use a command like $ scp SOURCEFILE.txt username@serveraddress:/target/path/
-
-### CI -- continuous integration systems
-Used mostly on bigger projects and products
-As soon as your feature is accepted, it will automatically be updated into the website
-The most advanced system
-Difficult to set up
-Once up, it's by far the fastest ones
-Or "Contiunuous deployment"
-It might be only connected to a test or staging environment
+1. Open two consoles
+2. Run "history" in one of them
+3. In the other, create a new markdown file called "notes.md"
+4. In the new file, write down all the commands you have used
+5. Write down all the arguments you have used and a brief explanation of them
+6. Also put in a section for general tips and knowledge you have learned
+7. Use markdown examples and syntax
+8. I recommend using BOTH nano and visual studio code.
+9. When done, `cat` the file out in the console, copy it and send it to Joel as a private message in Slack.
 
 
-### Version control
+## Installing software
 
-You can go back and see the history of your files.
-You can see Who did, What did they do, When did they do it.
+MAC/OSX -- brew, cask (macports program)
 
-Website is done
---- Add a new feature
---- Fix a bug
---- Change the User Interface
+A few commands
 
-History is just a part of why to use VCS - version control systems.
+$ df -h # check how much space do I have lefts 
+$ whoami
+$ groups
+$ sudo # do something as the "super user" or "root"
 
-Different VCS's
-- git --- originally developed for linux kernel development
-- subversion -- still popular but kinda old
-- mercurial...
+Root has all permissions, can do anything to the system.
+Avoid using sudo or the root user as much as possible. Use only when necessary.
 
-We will be using git.
+Package management systems: apt, snap, npm, brew, cask, yum, gem, emerge
 
-Other than history, the biggest reason to use a VCS is collaboration.
-You can monitor and check each others work.
+$ sudo apt update	# updates the list of things that I can install
+$ sudo apt install	# actually installs something
+$ sudo apt remove	# uninstall something
+$ sudo apt search google chrome	# search for something to install
+$ sudo apt autoremove # remove left over files from updating and installing
 
-Checking other peoples work is often called Peer Review and/or Code Review.
+$ sudo snap search opera
+$ sudo snap install opera
+$ sudo snap remove
 
-VCS help with dealing with conflicts when multiple people work on the same file at the same time.
+$ npm install -g "something" # node package manager installation
+$ npm uninstall -g "something" 
 
-Advanced terminal usage
+$ which  # show information about a program
+$ whereis # show program location
 
+## Browser Basics
 
-### Running multiple commands at the same time!
+Big browsers: Google Chrome, Safari, Internet Explorer, Edge, Mozilla Firefox
+Small browsers: Opera, Brave, Vivaldi, eLinks, DuckDuck, Midori....
 
-Method 1:
-$ command1 && command2
-Command2 will run only if command1 is successful!
+Target browsers: Support latest version of chrome and Edge
 
-Method 2:
-$ command1; command2
-Command2 will run even if command1 fails!
+Browser = Browser Engine + JavaScript engine + other stuff too, such as plugins and tools
+Browser Engine = HTML to visual rendering
+JavaSript Engine = Runs Javascript
 
-### Streams
+If your site works with one Browser using the Blink engine, most likely other Blink engine Browsers will work too.
+If your JS works with one browser that uses the V8 engine, it will most likely work with all of them.
 
-In Linux-like systems each program has 3 streams:
+Shortcuts
 
-input STDIN standard in
-output STDOUT standard out
-error STDERR standard errors
+^T -- opens new tab
+^N -- opens new window
+^W -- closes a tab
+^Shift-T -- reopens a closed tab
+^Shift-N -- reopens a closed window
+F11 -- view full screen
+F12 -- open developer console -- the web developers best friend and toolkit
 
-With the pipe symbol | we can redirect the output stream of a program
-into the input stream of some other program.
-
-With the > symbol we can redirect the output stream into a file!
-Wit just one > we will replace the contents of a file.
-With two of them, however we can append text to the end of a file;
-
-$ echo "New stuff here!" >> logfile.txt
