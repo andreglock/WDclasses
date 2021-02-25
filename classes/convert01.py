@@ -4,7 +4,7 @@ import os
 foot = '\n        </div>\n    </body>\n</html>'
 
 for i in range (1, 10):
-    print(str('%02d' % (i)) + 'BDL.md is input')
+    print(str('%02d' % (i)) + 'BDL.md is input', end='    ')
     markdown.markdownFromFile(
     input='0' + str(i) + 'BDL.md',
     output= 'stage.html',

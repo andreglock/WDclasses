@@ -3,8 +3,8 @@ import os
 
 foot = '\n        </div>\n    </body>\n</html>'
 
-for i in range (10, 28):
-    print(str('%02d' % (i)) + 'UIB.md is input')
+for i in range (10, 29):
+    print(str('%02d' % (i)) + 'UIB.md is input', end='    ')
     markdown.markdownFromFile(
     input= str('%02d' % (i)) + 'UIB.md',
     output= 'stage.html',
