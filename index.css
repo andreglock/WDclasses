@@ -7,7 +7,7 @@
 /* The side navigation menu */
 .sidenav {
     height: 100vh; /* 100% Full-height */
-    width: 150px;
+    width: 50px;
     position: fixed; /* Stay in place */
     overflow-y: auto;
     top: 0;
@@ -15,22 +15,16 @@
     bottom: 0;
     background-color: rgb(233, 233, 233);
     padding-top: 10px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
     
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
+    padding: 10px 6px 10px 0px;
+    text-decoration: underline;
+    font-size: 19px;
+    text-align: center;
     color: #000000;
     display: block;
-    transition: 0.3s;
-}
-    
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #808080;
 }
 
 a.home {
@@ -38,8 +32,37 @@ a.home {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: 90%;
     height: 2em;
+}
+
+#pagewrapper {
+    margin-left: 50px;
+}
+
+@media (min-width: 710px) {
+    .sidenav {
+        width: 150px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        transition: 0.3s;
+    }
+        
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #808080;
+    }
+
+    a.home {
+        width: 90%;
+    }
+
+    #pagewrapper {
+        margin-left: 150px;
+    }
 }
 
 body {
@@ -72,7 +95,7 @@ a.block {
 }
 
 main {
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
 }
 
@@ -123,8 +146,7 @@ h2 {
         width: 390px;
         margin: 20px;
     }
+
+
 }
 
-#pagewrapper {
-    margin-left: 160px;
-}
