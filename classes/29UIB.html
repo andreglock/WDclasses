@@ -41,32 +41,34 @@
             <a href="29UIB.html">UIB 20</a>
         </div>
         <div id="content">
-<h1>UIB Forms 2</h1>
-<h2>More styling</h2>
+<h1>UIB - Layout - Grid 1</h1>
+<h2>CSS Grid on parent elements</h2>
 <ul>
-<li>Focusing an element; use tab</li>
-<li>Focused elements should have some kind of focus indicator, such as a box around them</li>
-<li>You can style focused elements with <code>:focus</code></li>
-<li>
-<p>You can add an additional border to help with focus tracking with
-        - <code>outline</code> - very similar to borders
-        - Do not remove the outline!</p>
+<li>The grid is quite new, browser support added 2017</li>
+<li>Grid is similar to flexbox, but more powerful</li>
+<li>Easy to learn, maybe a bit difficult to master</li>
+<li>Both grid and flexbox are part of CSS<ul>
+<li>There is no need to abandon one for the other</li>
+<li>Flexbox is one-dimensional</li>
+<li>Grid is two-dimensional-  <code>display: grid;</code></li>
+<li>Defines an element to be a grid container</li>
+<li>Its children become grid items</li>
+</ul>
 </li>
-<li>
-<p>placeholder text? There's a style for that!
-        - <code>::placeholder</code> pseudo-element can be used for styling</p>
+<li><code>grid-template-columns: 1fr 2fr 1fr;</code><ul>
+<li>Defines the width and number of columns</li>
+<li>The column widths accept CSS units</li>
+<li>The unit most used with grids is "fr" (fraction)</li>
+<li>When using fr, the widths are automatically calculated</li>
+<li>Fr is recommended over percentages due to margin/padding issues</li>
+</ul>
 </li>
-<li>
-<p>3 new attributes for inputs!
-        - value
-                - Sets a default value for a form input
-        - disabled
-                - Sets a form input to be disabled
-                - Disabled fields are not even focusable
-                - By default, these are styled darker
-        - readonly
-                - Sets a form input to be read only
-                - Readonly fields are enabled, you can focus them, but not edit</p>
+<li><code>gap: 1em;</code> - defines the space between elements</li>
+<li><code>grid-auto-rows: 100px;</code> - defines row height, overflow danger!</li>
+<li><code>grid-auto-rows: minmax(100px, auto);</code><ul>
+<li>Defines the minimum and the maximum row height</li>
+<li>"auto" is the default, means height grows with content</li>
+</ul>
 </li>
 </ul>
         </div>
