@@ -21,3 +21,4 @@
 - `grid-auto-rows: minmax(100px, auto);`
     - Defines the minimum and the maximum row height
     - "auto" is the default, means height grows with content
+- `background-attachment: fixed` looks super good!
