@@ -57,3 +57,38 @@
 - *Self study* 
     - MDN transforms page for more advanced shapes
     - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms
+
+## ANIMATION part 1 : transition
+
+- "Transition: awesomer than fancy shapes" - Joel 2021
+- `transition`
+    - Shorthand property
+        - comma separeted, like background
+    - CSS            
+    
+        transition:
+            [transition-property]
+            [transition-duration]
+            [transition-timing-function]
+            [transition-delay]        
+            
+        - `[transition-property]`
+            - which property to animate
+            - can be `all` (default)
+        - `[transition-duration]`
+            - for example 3s or 300ms
+        - `[transition-timing-function]`
+            - ease, linear, custom (bezier)
+        - `[transition-delay]`
+            - for example 3s or 300ms
+    - `transition: all 1s, background 3s ease 200ms;`
+    
+- Best Design Practices
+    - When?
+        - Rarely
+        - During actions (:focus)
+        - As stylistic elements (background changes)
+    - How much?
+        - Subtle
+        - Real fast (0.3s)
+        - or Real slow (20s)
