@@ -43,12 +43,12 @@ a.home {
 @media (min-width: 710px) {
     .sidenav {
         width: 150px;
+        transition:  color 300ms, background-color 300ms;
     }
     .sidenav a {
         padding: 8px;
         text-decoration: none;
         font-size: 25px;
-        transition: 0.3s;
     }
         
     /* When you mouse over the navigation links, change their color */
@@ -123,12 +123,12 @@ h2 {
 @media (min-width: 710px) {
     a {
         text-decoration: none;
+        transition: color 300ms, background-color 300ms;
     }
 
     a:hover {
         background-color: white;
         color: black;
-        transition: 300ms;
     }
 
     main {

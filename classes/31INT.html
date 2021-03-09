@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="../index.html" class="home"></a>
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="05BDL.html">BDL 5</a>
+            <a href="06BDL.html">BDL 6</a>
+            <a href="07BDL.html">BDL 7</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
+            <a href="28UIB.html">UIB 19</a>
+            <a href="29UIB.html">UIB 20</a>
+            <a href="30UIB.html">UIB 21</a>
+            <a href="31INT.html">Int 01</a>
+<!--             <a href="32INT.html">Int 02</a>
+            <a href="33INT.html">Int 03</a> -->
+        </div>
+        <div id="content">
+<h1>Interactions</h1>
+<h2>Fancy shapes with HTML and CSS</h2>
+<ul>
+<li><em>Not super duper important, but good to know</em></li>
+<li>Very cool looking shapes are possible</li>
+<li>
+<p>We already know a few shapes we can use</p>
+<ul>
+<li>https://css-tricks.com/the-shapes-of-css/</li>
+<li>Simple width, height, border(s) and positioning</li>
+<li>Box, rectangle, circle, ovals, pills</li>
+<li>Triangle
+        width: 0px;
+        height: 0px;
+        border-top: 0px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid blue;</li>
+<li>Trapezoid
+        width: 60px;
+        height: 0px;
+        border-top: 0px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid blue;</li>
+<li>Star
+    .box {
+        width: 0px;
+        height: 0px;
+        margin: auto;          <br />
+        border-top: 0px solid transparent;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid darkred;
+    }      <br />
+    .box::after {
+        content: "";          <br />
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid red;
+        position: relative;
+        left: -50px;
+        top: 130px;
+    }</li>
+</ul>
+</li>
+<li>
+<p><code>clip-path</code></p>
+<ul>
+<li>https://bennettfeely.com/clippy/</li>
+<li>Can be applied to regular old elements</li>
+<li><code>clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);</code></li>
+</ul>
+</li>
+<li>
+<p><code>transform</code></p>
+<ul>
+<li>Allows you to transform an element in various ways</li>
+<li><code>transform: rotate(33deg);</code> (turns and degrees)</li>
+<li><code>transform: scale(0.9);</code>, <code>transform: scale(1.1)</code></li>
+<li><code>transform: translateX(-10px)</code></li>
+<li><code>transform: scale(0.5) rotate(10deg);</code> - two at a time!</li>
+</ul>
+</li>
+<li>
+<p><em>Self study</em> </p>
+<ul>
+<li>MDN transforms page for more advanced shapes</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms</li>
+</ul>
+</li>
+</ul>
+        </div>
+    </body>
+</html>
