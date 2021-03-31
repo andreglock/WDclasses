@@ -1,6 +1,6 @@
 # Interactions 
 
-## Fancy shapes with HTML and CSS
+## Fancy shapes
 
 - *Not super duper important, but good to know*
 - Very cool looking shapes are possible
@@ -9,44 +9,52 @@
     - Simple width, height, border(s) and positioning
     - Box, rectangle, circle, ovals, pills
     - Triangle
+
             width: 0px;
             height: 0px;
             border-top: 0px solid transparent;
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
             border-bottom: 100px solid blue;
+
     - Trapezoid
+
             width: 60px;
             height: 0px;
             border-top: 0px solid transparent;
             border-left: 50px solid transparent;
             border-right: 50px solid transparent;
             border-bottom: 100px solid blue;
+
     - Star
-        .box {
-            width: 0px;
-            height: 0px;
-            margin: auto;            
-            border-top: 0px solid transparent;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid darkred;
-        }        
-        .box::after {
-            content: "";            
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-top: 100px solid red;
-            position: relative;
-            left: -50px;
-            top: 130px;
-        }
+
+            .box {
+                width: 0px;
+                height: 0px;
+                margin: auto;
+
+                border-top: 0px solid transparent;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid darkred;
+            }
+
+            .box::after {
+                content: "";
+
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid red;
+                position: relative;
+                left: -50px;
+                top: 130px;
+            }
 
 - `clip-path`
     - https://bennettfeely.com/clippy/
     - Can be applied to regular old elements
     - `clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);`
-    
+
 - `transform`
     - Allows you to transform an element in various ways
     - `transform: rotate(33deg);` (turns and degrees)
@@ -57,38 +65,3 @@
 - *Self study* 
     - MDN transforms page for more advanced shapes
     - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms
-
-## ANIMATION part 1 : transition
-
-- "Transition: awesomer than fancy shapes" - Joel 2021
-- `transition`
-    - Shorthand property
-        - comma separeted, like background
-    - CSS            
-    
-        transition:
-            [transition-property]
-            [transition-duration]
-            [transition-timing-function]
-            [transition-delay]        
-            
-        - `[transition-property]`
-            - which property to animate
-            - can be `all` (default)
-        - `[transition-duration]`
-            - for example 3s or 300ms
-        - `[transition-timing-function]`
-            - ease, linear, custom (bezier)
-        - `[transition-delay]`
-            - for example 3s or 300ms
-    - `transition: all 1s, background 3s ease 200ms;`
-    
-- Best Design Practices
-    - When?
-        - Rarely
-        - During actions (:focus)
-        - As stylistic elements (background changes)
-    - How much?
-        - Subtle
-        - Real fast (0.3s)
-        - or Real slow (20s)

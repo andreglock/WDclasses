@@ -47,21 +47,27 @@
             <a href="35UIB.html">UIB 26</a>
         </div>
         <div id="content">
-<h1>BDL 8 - Even MORE git stuff!</h1>
+<h1>GH Pages</h1>
+<h2>Repository first manual method</h2>
+<ol>
+<li>Create empty repo</li>
+<li>Clone repo</li>
+<li>Create content and push to master</li>
+<li>Push to new branch called <code>gh-pages</code>
+    <code>git push -u origin master:gh-pages</code></li>
+<li>Go to repository settings in Github!
+    Check the published address</li>
+</ol>
+<h2>Tool assisted method</h2>
 <ul>
-<li><code>git init</code> - initializes the current working folder as a git repository</li>
-<li>Init should just be run one time per repository</li>
-<li><code>git</code> commands can be run in subfolders</li>
-<li>Git <em>only</em> tracks files, not directories</li>
-<li>The commit message of the first commit to a repo often is "Initial import", "Initial commit" or something similar</li>
-<li>You can create a repository in GitHub before OR after creating your local project</li>
-<li>To add an existing local git repository (new project for example) to a newly created GH repository, you need to add the GH repository as a <em>remote</em><ul>
-<li><code>git remote add origin https://github.com/usernamehere/projectnamehere.git</code></li>
+<li><code>gh-pages</code> -- <code>npm install -g gh-pages</code></li>
+<li>After installing, just running <code>gh-pages</code> should work</li>
+<li><em>HOWEVER</em><ul>
+<li>Currently this will NOT ork without a package.json file!!</li>
+<li>Bug in latest version https://github.com/tschaub/gh-pages/issues/354</li>
 </ul>
 </li>
-<li>You can see the manual for git commands too! <code>man git branch</code></li>
 </ul>
-<p>git config --global init.defaultBranch main </p>
         </div>
     </body>
 </html>

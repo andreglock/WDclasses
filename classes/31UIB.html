@@ -40,13 +40,15 @@
             <a href="28UIB.html">UIB 19</a>
             <a href="29UIB.html">UIB 20</a>
             <a href="30UIB.html">UIB 21</a>
-            <a href="31INT.html">UIB 22</a>
-<!--             <a href="32INT.html">Int 02</a>
-            <a href="33INT.html">Int 03</a> -->
+            <a href="31UIB.html">UIB 22</a>
+            <a href="32UIB.html">UIB 23</a>
+            <a href="33UIB.html">UIB 24</a>
+            <a href="34UIB.html">UIB 25</a>
+            <a href="35UIB.html">UIB 26</a>
         </div>
         <div id="content">
 <h1>Interactions</h1>
-<h2>Fancy shapes with HTML and CSS</h2>
+<h2>Fancy shapes</h2>
 <ul>
 <li><em>Not super duper important, but good to know</em></li>
 <li>Very cool looking shapes are possible</li>
@@ -56,39 +58,51 @@
 <li>https://css-tricks.com/the-shapes-of-css/</li>
 <li>Simple width, height, border(s) and positioning</li>
 <li>Box, rectangle, circle, ovals, pills</li>
-<li>Triangle
-        width: 0px;
-        height: 0px;
-        border-top: 0px solid transparent;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 100px solid blue;</li>
-<li>Trapezoid
-        width: 60px;
-        height: 0px;
-        border-top: 0px solid transparent;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 100px solid blue;</li>
-<li>Star
-    .box {
-        width: 0px;
-        height: 0px;
-        margin: auto;          <br />
-        border-top: 0px solid transparent;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 100px solid darkred;
-    }      <br />
-    .box::after {
-        content: "";          <br />
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-top: 100px solid red;
-        position: relative;
-        left: -50px;
-        top: 130px;
-    }</li>
+<li>
+<p>Triangle</p>
+<pre><code>width: 0px;
+height: 0px;
+border-top: 0px solid transparent;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid blue;
+</code></pre>
+</li>
+<li>
+<p>Trapezoid</p>
+<pre><code>width: 60px;
+height: 0px;
+border-top: 0px solid transparent;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid blue;
+</code></pre>
+</li>
+<li>
+<p>Star</p>
+<pre><code>.box {
+    width: 0px;
+    height: 0px;
+    margin: auto;
+
+    border-top: 0px solid transparent;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid darkred;
+}
+
+.box::after {
+    content: "";
+
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    position: relative;
+    left: -50px;
+    top: 130px;
+}
+</code></pre>
+</li>
 </ul>
 </li>
 <li>
@@ -114,64 +128,6 @@
 <ul>
 <li>MDN transforms page for more advanced shapes</li>
 <li>https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms</li>
-</ul>
-</li>
-</ul>
-<h2>ANIMATION part 1 : transition</h2>
-<ul>
-<li>"Transition: awesomer than fancy shapes" - Joel 2021</li>
-<li>
-<p><code>transition</code></p>
-<ul>
-<li>Shorthand property<ul>
-<li>comma separeted, like background</li>
-</ul>
-</li>
-<li>
-<p>CSS            </p>
-<p>transition:
-    [transition-property]
-    [transition-duration]
-    [transition-timing-function]
-    [transition-delay]        </p>
-<ul>
-<li><code>[transition-property]</code><ul>
-<li>which property to animate</li>
-<li>can be <code>all</code> (default)</li>
-</ul>
-</li>
-<li><code>[transition-duration]</code><ul>
-<li>for example 3s or 300ms</li>
-</ul>
-</li>
-<li><code>[transition-timing-function]</code><ul>
-<li>ease, linear, custom (bezier)</li>
-</ul>
-</li>
-<li><code>[transition-delay]</code><ul>
-<li>for example 3s or 300ms</li>
-<li><code>transition: all 1s, background 3s ease 200ms;</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Best Design Practices</p>
-<ul>
-<li>When?<ul>
-<li>Rarely</li>
-<li>During actions (:focus)</li>
-<li>As stylistic elements (background changes)</li>
-</ul>
-</li>
-<li>How much?<ul>
-<li>Subtle</li>
-<li>Real fast (0.3s)</li>
-<li>or Real slow (20s)</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

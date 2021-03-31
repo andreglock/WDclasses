@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="../index.html" class="home"></a>
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="05BDL.html">BDL 5</a>
+            <a href="06BDL.html">BDL 6</a>
+            <a href="07BDL.html">BDL 7</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
+            <a href="28UIB.html">UIB 19</a>
+            <a href="29UIB.html">UIB 20</a>
+            <a href="30UIB.html">UIB 21</a>
+            <a href="31UIB.html">UIB 22</a>
+            <a href="32UIB.html">UIB 23</a>
+            <a href="33UIB.html">UIB 24</a>
+            <a href="34UIB.html">UIB 25</a>
+            <a href="35UIB.html">UIB 26</a>
+        </div>
+        <div id="content">
+<h1>Animations</h1>
+<h2>Transition</h2>
+<ul>
+<li>"Transition: awesomer than fancy shapes" - Joel 2021</li>
+<li>
+<p><code>transition</code></p>
+<ul>
+<li>Shorthand property<ul>
+<li>comma separated, like background</li>
+</ul>
+</li>
+<li>
+<p>CSS</p>
+<pre><code>transition:
+    [transition-property]
+    [transition-duration]
+    [transition-timing-function]
+    [transition-delay]
+</code></pre>
+<ul>
+<li><code>[transition-property]</code><ul>
+<li>which property to animate</li>
+<li>can be <code>all</code> (default)</li>
+</ul>
+</li>
+<li><code>[transition-duration]</code><ul>
+<li>for example 3s or 300ms</li>
+</ul>
+</li>
+<li><code>[transition-timing-function]</code><ul>
+<li>ease, linear, custom (bezier)</li>
+</ul>
+</li>
+<li><code>[transition-delay]</code><ul>
+<li>for example 3s or 300ms</li>
+<li><code>transition: all 1s, background 3s ease 200ms;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Best Design Practices</p>
+<ul>
+<li>When?<ul>
+<li>Rarely</li>
+<li>During actions (:focus)</li>
+<li>As stylistic elements (background changes)</li>
+</ul>
+</li>
+<li>How much?<ul>
+<li>Subtle</li>
+<li>Real fast (0.3s)</li>
+<li>or Real slow (20s)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Custom animations</h2>
+<ul>
+<li>
+<p>Creation custom animations is based on two CSS things:</p>
+<ul>
+<li><code>@keyframes</code></li>
+<li><code>animation</code></li>
+</ul>
+</li>
+<li>
+<p><code>@keyframes [name] { ... }</code></p>
+<ul>
+<li>Defines the name and the steps of an animation</li>
+<li>Multiple steps in one animation</li>
+</ul>
+</li>
+<li><code>animation</code><ul>
+<li>Defines which animation play for which element</li>
+<li>Defines how the animation plays</li>
+<li>Shorthand<ul>
+<li>Is good at understanding what you mean</li>
+<li>Check the specific order in MDN</li>
+</ul>
+</li>
+<li>Can be confusing<ul>
+<li><code>animation: 3s ease-in 1s 2 reverse both paused slidein;</code></li>
+</ul>
+</li>
+<li>Separated values<ul>
+<li><code>animation-name</code>: Potato, MyAnimation</li>
+<li><code>animation-duration</code>: 5s, 500ms</li>
+<li><code>animation-iteration-count</code>: 5, infinite</li>
+<li><code>animation-delay</code>: 2s, 900ms</li>
+<li><code>animation-direction</code>: reverse, alternate</li>
+<li><code>animation-timing-function</code>: linear, ease</li>
+<li><code>animation-fill-mode</code>: forwards</li>
+<li><code>animation-play-state</code>: paused</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+        </div>
+    </body>
+</html>

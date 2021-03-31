@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André">
+    <link rel="stylesheet" href="../style.css">
+    <title>Classes</title>
+</head>
+    <body>
+        <div class="sidenav">
+            <a href="../index.html" class="home"></a>
+            <a href="01BDL.html">BDL 1</a>
+            <a href="02BDL.html">BDL 2</a>
+            <a href="03BDL.html">BDL 3</a>
+            <a href="04BDL.html">BDL 4</a>
+            <a href="05BDL.html">BDL 5</a>
+            <a href="06BDL.html">BDL 6</a>
+            <a href="07BDL.html">BDL 7</a>
+            <a href="08BDL.html">BDL 8</a>
+            <a href="09BDL.html">BDL 9</a>
+            <a href="10UIB.html">UIB 1</a>
+            <a href="11UIB.html">UIB 2</a>
+            <a href="12UIB.html">UIB 3</a>
+            <a href="13UIB.html">UIB 4</a>
+            <a href="14UIB.html">UIB 5</a>
+            <a href="15UIB.html">UIB 6</a>
+            <a href="16UIB.html">UIB 7</a>
+            <a href="17UIB.html">UIB 8</a>
+            <a href="18UIB.html">UIB 9</a>
+            <a href="19UIB.html">UIB 10</a>
+            <a href="20UIB.html">UIB 11</a>
+            <a href="21UIB.html">UIB 12</a>
+            <a href="22UIB.html">UIB 13</a>
+            <a href="23UIB.html">UIB 14</a>
+            <a href="24UIB.html">UIB 15</a>
+            <a href="25UIB.html">UIB 16</a>
+            <a href="26UIB.html">UIB 17</a>
+            <a href="27UIB.html">UIB 18</a>
+            <a href="28UIB.html">UIB 19</a>
+            <a href="29UIB.html">UIB 20</a>
+            <a href="30UIB.html">UIB 21</a>
+            <a href="31UIB.html">UIB 22</a>
+            <a href="32UIB.html">UIB 23</a>
+            <a href="33UIB.html">UIB 24</a>
+            <a href="34UIB.html">UIB 25</a>
+            <a href="35UIB.html">UIB 26</a>
+        </div>
+        <div id="content">
+<h1>UIB 30 - SASS continued</h1>
+<h2>Mixins</h2>
+<p>"Predefined reusable rulesets"
+    @mixin coolbox {
+        border: 2px solid double;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .card {
+        background: lightblue;
+        @include coolbox;
+    }
+    .example {
+        background: palegreen;
+        @include coolbox;
+    }
+    button {
+        @include coolbox;
+    }</p>
+<h2>You can add parameters!</h2>
+<pre><code>@mixin bordered($width, $color) {
+    border: $width solid $color;
+    border-radius: $width;
+}
+.card {
+    background: lightblue;
+    @include bordered(1px, red);
+}
+</code></pre>
+<h2>One of the main uses for mixins</h2>
+<p>Bootsrap has some mixins!</p>
+<pre><code>// media-breakpoint-up
+    // @media (min-width: ...) {}
+
+// media-breakpoint-down
+    // @media (max-width: ...) {}
+
+// media-breakpoint-between
+    // @media (min-width: ...) and (max-width: ...) {}
+
+// For example:
+@include media-breakpoint-up(md) {
+    nav {
+        background: red;
+    }
+}
+</code></pre>
+<h1>Importing stuff!</h1>
+<p>Sometimes it makes sense to split your projects SCSS/SASS into multiple files. For example, you can move you variables into a separate file.</p>
+<p>@use "card/variables";
+@use "hero/variables";</p>
+<h1>Vanilla CSS variables</h1>
+<p>Actually, custom properties.
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties</p>
+<p>Common best practice    </p>
+<pre><code>:root {
+    --main-bg-color: brown;
+}    
+element {
+    background-color: var(--main-bg-color);
+}
+</code></pre>
+<p><em>Inheritance</em>
+    <div class="box one">
+        <div class="box two">
+            <div class="box three"></div>
+            <div class="box four"></div>
+        </div>
+    </div>
+    .two {
+        --test: 10px;
+    }
+    .three {
+        --test: 2em; 
+    }    </p>
+<pre><code>For the class="two" element: 10px
+For the class="three" element: 2em
+For the class="four" element: 10px (inherited from its parent)
+For the class="one" element: invalid value, which is the default value of any custom property
+</code></pre>
+        </div>
+    </body>
+</html>
