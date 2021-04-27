@@ -1,78 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="André">
-    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <title>Index</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <div class="sidenav">
-        <a href="index.html" class="home"></a>
-        <a href="classes/01BDL.html">BDL 1</a>
-        <a href="classes/02BDL.html">BDL 2</a>
-        <a href="classes/03BDL.html">BDL 3</a>
-        <a href="classes/04BDL.html">BDL 4</a>
-        <a href="classes/05BDL.html">BDL 5</a>
-        <a href="classes/06BDL.html">BDL 6</a>
-        <a href="classes/07BDL.html">BDL 7</a>
-        <a href="classes/08BDL.html">BDL 8</a>
-        <a href="classes/09BDL.html">BDL 9</a>
-        <a href="classes/10UIB.html">UIB 1</a>
-        <a href="classes/11UIB.html">UIB 2</a>
-        <a href="classes/12UIB.html">UIB 3</a>
-        <a href="classes/13UIB.html">UIB 4</a>
-        <a href="classes/14UIB.html">UIB 5</a>
-        <a href="classes/15UIB.html">UIB 6</a>
-        <a href="classes/16UIB.html">UIB 7</a>
-        <a href="classes/17UIB.html">UIB 8</a>
-        <a href="classes/18UIB.html">UIB 9</a>
-        <a href="classes/19UIB.html">UIB 10</a>
-        <a href="classes/20UIB.html">UIB 11</a>
-        <a href="classes/21UIB.html">UIB 12</a>
-        <a href="classes/22UIB.html">UIB 13</a>
-        <a href="classes/23UIB.html">UIB 14</a>
-        <a href="classes/24UIB.html">UIB 15</a>
-        <a href="classes/25UIB.html">UIB 16</a>
-        <a href="classes/26UIB.html">UIB 17</a>
-        <a href="classes/27UIB.html">UIB 18</a>
-        <a href="classes/28UIB.html">UIB 19</a>
-        <a href="classes/29UIB.html">UIB 20</a>            
-        <a href="classes/30UIB.html">UIB 21</a>
-        <a href="classes/31UIB.html">UIB 22</a>
-        <a href="classes/32UIB.html">UIB 23</a>
-        <a href="classes/33UIB.html">UIB 24</a>
-        <a href="classes/34UIB.html">UIB 25</a>
-        <a href="classes/35UIB.html">UIB 26</a>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <ul class="list-unstyled components">
+                <li> <!-- use class="active" when done> -->
+                    <a href="index.html"><img src="img/home.svg" alt="home" class="home" height="2.7em"></a>
+                </li>
+                
+                <li>
+                    <a href="#bdlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Basic Digital Literacy</a>
+                    <ul class="collapse list-unstyled" id="bdlSubmenu">
+                        <li><a href="classes/01BDL.html">BDL 1</a></li>
+                        <li><a href="classes/02BDL.html">BDL 2</a></li>
+                        <li><a href="classes/03BDL.html">BDL 3</a></li>
+                        <li><a href="classes/04BDL.html">BDL 4</a></li>
+                        <li><a href="classes/05BDL.html">BDL 5</a></li>
+                        <li><a href="classes/06BDL.html">BDL 6</a></li>
+                        <li><a href="classes/07BDL.html">BDL 7</a></li>
+                        <li><a href="classes/08BDL.html">BDL 8</a></li>
+                        <li><a href="classes/09BDL.html">BDL 9</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#uibSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">User Interface Basics</a>
+                    <ul class="collapse list-unstyled" id="uibSubmenu">
+                        <li><a href="classes/10UIB.html">UIB 1</a></li>
+                        <li><a href="classes/11UIB.html">UIB 2</a></li>
+                        <li><a href="classes/12UIB.html">UIB 3</a></li>
+                        <li><a href="classes/13UIB.html">UIB 4</a></li>
+                        <li><a href="classes/14UIB.html">UIB 5</a></li>
+                        <li><a href="classes/15UIB.html">UIB 6</a></li>
+                        <li><a href="classes/16UIB.html">UIB 7</a></li>
+                        <li><a href="classes/17UIB.html">UIB 8</a></li>
+                        <li><a href="classes/18UIB.html">UIB 9</a></li>
+                        <li><a href="classes/19UIB.html">UIB 10</a></li>
+                        <li><a href="classes/20UIB.html">UIB 11</a></li>
+                        <li><a href="classes/21UIB.html">UIB 12</a></li>
+                        <li><a href="classes/22UIB.html">UIB 13</a></li>
+                        <li><a href="classes/23UIB.html">UIB 14</a></li>
+                        <li><a href="classes/24UIB.html">UIB 15</a></li>
+                        <li><a href="classes/25UIB.html">UIB 16</a></li>
+                        <li><a href="classes/26UIB.html">UIB 17</a></li>
+                        <li><a href="classes/27UIB.html">UIB 18</a></li>
+                        <li><a href="classes/28UIB.html">UIB 19</a></li>
+                        <li><a href="classes/29UIB.html">UIB 20</a></li>
+                        <li><a href="classes/30UIB.html">UIB 21</a></li>
+                        <li><a href="classes/31UIB.html">UIB 22</a></li>
+                        <li><a href="classes/32UIB.html">UIB 23</a></li>
+                        <li><a href="classes/33UIB.html">UIB 24</a></li>
+                        <li><a href="classes/34UIB.html">UIB 25</a></li>
+                        <li><a href="classes/35UIB.html">UIB 26</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pbSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Programing Basics</a>
+                    <ul class="collapse list-unstyled" id="pbSubmenu">
+                        <li><a href="classes/36PB.html">PB 1</a></li>
+                        <li><a href="classes/37PB.html">PB 2</a></li>
+                        <li><a href="classes/38PB.html">PB 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://andreglock.github.io/portfolio/" target="_blank">Portfolio</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <header>
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h1>Codelicious Classes</h1>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <h2>Flexbox games:</h2>
+                    <a class="block" href="https://flexboxfroggy.com/" target="blank">Level one: Flexfroggy</a>
+                    <a class="block" href="https://www.flexboxdefense.com/" target="blank">Level two: Flexbox Defense</a>
+                </div>
+                <div>
+                    <h2>Other CSS games:</h2>
+                    <a class="block" href="https://flukeout.github.io/" target="blank">CSS Diner</a>
+                    <a class="block" href="https://cssgridgarden.com/" target="blank">CSS Garden</a>
+                </div>
+                <div>
+                    <h2>CSS Designing Tools:</h2>
+                    <a class="block" href="https://bennettfeely.com/clippy/" target="blank">Clip-path maker</a>
+                    <a class="block" href="https://cssgradient.io/" target="blank">Gradient Maker</a>
+                    <a class="block" href="https://paletton.com/" target="blank">Color Pallet Generator</a>
+                </div>
+                <img src="img/linda1.JPG" alt="Linda">
+                <img src="img/linda2.jpg" alt="Linda">
+                <img src="img/linda3.JPG" alt="Linda">
+                <img src="img/linda4.jpg" alt="Linda">
+                <img src="img/linda5.jpg" alt="Linda">
+            </main>
+        </div>
     </div>
-    <div id="pagewrapper">
-        <header>
-            <h1>Codelicious Classes</h1>
-        </header>
-        <main>
-            <div>
-                <h2>Flexbox games:</h2>
-                <a class="block" href="https://flexboxfroggy.com/" target="blank">Level one: Flexfroggy</a>
-                <a class="block" href="https://www.flexboxdefense.com/" target="blank">Level two: Flexbox Defense</a>
-            </div>
-            <div>
-                <h2>Other CSS games:</h2>
-                <a class="block" href="https://flukeout.github.io/" target="blank">CSS Diner</a>
-                <a class="block" href="https://cssgridgarden.com/" target="blank">CSS Garden</a>
-            </div>
-            <div>
-                <h2>CSS Designing Tools:</h2>
-                <a class="block" href="https://bennettfeely.com/clippy/" target="blank">Clip-path maker</a>
-                <a class="block" href="https://cssgradient.io/" target="blank">Gradient Maker</a>
-                <a class="block" href="https://paletton.com/" target="blank">Color Pallet Generator</a>
-            </div>
-            <img src="img/linda1.JPG" alt="Linda">
-            <img src="img/linda2.jpg" alt="Linda">
-            <img src="img/linda3.JPG" alt="Linda">
-            <img src="img/linda4.jpg" alt="Linda">
-            <img src="img/linda5.jpg" alt="Linda">
-        </main>
-    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
 </body>
+
 </html>

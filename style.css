@@ -26,16 +26,13 @@
 }
 
 a.home {
+  display: inline-block;
   background-image: url(img/home.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 90%;
   height: 2em;
-}
-
-#content {
-  margin-left: 50px;
 }
 
 @media (min-width: 710px) {
@@ -58,7 +55,4 @@ a.home {
       width: 100%;
   }
 
-  #content {
-      margin-left: 150px;
-  }
 }
