@@ -59,7 +59,7 @@ main>div, img {
 }
 
 main>div {
-    min-height: 270px;
+    min-height: 242px;
     text-align: center;
     background-color: #2f8d66;
     padding-bottom: 25px;
@@ -91,7 +91,7 @@ h2 {
     }
     
     main>div, img {
-        width: 360px;
+        width: 325px;
         margin: 20px;
     }
 }
