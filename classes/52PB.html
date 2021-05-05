@@ -26,7 +26,7 @@
                 </li>
                 
                 <li>
-                    <a href="#bdlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">Basic Digital Literacy</a>
+                    <a href="#bdlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Basic Digital Literacy</a>
                     <ul class="collapse list-unstyled" id="bdlSubmenu">
                         <li><a href="01BDL.html">BDL 1</a></li>
                         <li><a href="02BDL.html">BDL 2</a></li>
@@ -40,8 +40,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#uibSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">User Interface Basics</a>
-                    <ul class="collapse list-unstyled show" id="uibSubmenu">
+                    <a href="#uibSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">User Interface Basics</a>
+                    <ul class="collapse list-unstyled" id="uibSubmenu">
                         <li><a href="10UIB.html">UIB 1</a></li>
                         <li><a href="11UIB.html">UIB 2</a></li>
                         <li><a href="12UIB.html">UIB 3</a></li>
@@ -71,8 +71,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#pbSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Programing Basics</a>
-                    <ul class="collapse list-unstyled" id="pbSubmenu">
+                    <a href="#pbSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">Programing Basics</a>
+                    <ul class="collapse list-unstyled show" id="pbSubmenu">
                         <li><a href="36PB.html">PB 1</a></li>
                         <li><a href="37PB.html">PB 2</a></li>
                         <li><a href="38PB.html">PB 3</a></li>
@@ -109,102 +109,69 @@
                     </button>
                 </div>
             </header>
-<h1>UIB - Fonts and boxes</h1>
-<h2>Quick tip</h2>
-<ul>
-<li>Google Fonts for custom fonts</li>
-</ul>
-<h2>Everything is a box!</h2>
-<ul>
-<li>Easy to see with inspecting and setting Dev tools CSS</li>
-<li><code>* { border: 1px solid red !important; }</code></li>
-<li><code>div { border: 1px solid blue !important; }</code></li>
-<li><code>span { border: 1px solid green !important; }</code></li>
-</ul>
-<h2>Containing content</h2>
-<ul>
-<li>Semantic elements, let's learn a few</li>
-<li><code>&lt;main&gt;</code></li>
-<li>represents the main content of a page</li>
-<li>often combined with "skipnav" technique</li>
-<li>nav = your navigation menu<ul>
-<li><code>&lt;nav&gt;</code> - semantic element used for wrapping your navigation section</li>
-</ul>
-</li>
-<li>used for wrapping your main content</li>
-<li>"shrink wrapping" / wrapping<ul>
-<li>put all of your content inside the main</li>
-</ul>
-</li>
-<li>often you can have classes and/or ids for your main element<ul>
-<li><main class="container"></main></li>
-</ul>
-</li>
-<li>One (visible) main per page</li>
-</ul>
-<h2>Stop content busting out of its box!</h2>
-<pre><code>width: 40vw;       /* Set box width */
-height: 40vh;      /* Set box height */
-margin: auto;      /* Center this box inside its parent box */
-overflow: hidden;  /* Prevent content from overflowing out of the box! */
+<h1>PB - Data Structures - 4</h1>
+<p>Yesterday we did</p>
+<pre><code>- the for...of loop
+- Object.keys(&lt;object&gt;)
+- Object.values(&lt;object&gt;)
+- Object.entries(&lt;object&gt;)
 </code></pre>
-<h2>Elements</h2>
-<ul>
-<li>Two types of elements</li>
-<li>Block<ul>
-<li>Always start (on) a new line</li>
-<li>Take up the full width available</li>
-<li>stretch out to the left and to the right as much as they can</li>
-<li>meaning it has a width of 100% by default</li>
-<li>the height is defined by the content automatically OR by the developer</li>
-</ul>
-</li>
-<li>Inline<ul>
-<li>Start within an existing block-level element (they don't start a new line)</li>
-</ul>
-</li>
-</ul>
-<h3>BLOCKS</h3>
-<ul>
-<li>main, nav, div, p, hr, lists(ul, ol, li), h1-h6, pre</li>
-<li><section><ul>
-<li>a section of the page which doesn't have a more specific semantic element to use</li>
-<li>often these would have a heading</li>
-</ul>
-</li>
-<li><article><ul>
-<li>a self-contained composition in a page, which is intended to be independently redistributable or reusable</li>
-</ul>
-</li>
-<li><aside><ul>
-<li>a part of a document where the content is only indirectly related to the main content</li>
-</ul>
-</li>
-<li><header><ul>
-<li>defines the top part of a page</li>
-<li>often repeated in many pages</li>
-</ul>
-</li>
-<li>
-<footer>
-<ul>
-<li>defines the bottom part of a page</li>
-<li>often repeated in many pages</li>
-</ul>
-</li>
-<li>
-<p>SO SO SO MANY MORE!</p>
-</li>
-</ul>
-<h3>INLINE</h3>
-<ul>
-<li>span, a, em, br, img</li>
-<li>strong, b</li>
-<li>sup and sub</li>
-<li>input</li>
-</ul>
-<p><strong>You do not need to know all of these</strong></p>
-<p><strong>Self-learning</strong> Have a look at MDN to see what Block and Inline elements exist</p>        </div>
+<p>Today we will do</p>
+<pre><code>- Quiz
+- Terminology, tips and tricks
+- Clone vs. Reference
+</code></pre>
+<h1>Quiz</h1>
+<h1>Terminology, Tips And Tricks</h1>
+<p>Much of this is from notes I have taken during class and when reviewing the tests.</p>
+<p>Terminology
+    () Parentheses
+    [] Brackets / Square brackets
+    {} Braces / curly braces / curly brackets
+    &lt;&gt; Less than &amp; Greater than / angle brackets
+    : Colon
+    ; Semicolon
+    &amp; Ampersand 
+    | Pipe
+    * Asterisk, Star (also times, multipled by)
+    ^ Caret, Circumflex, "Hat"</p>
+<p>Notes
+    Pay close attention when to <code>return</code> form a function and when to <code>console.log</code> in a function
+        Use both with intention; know when and why have have them
+        "write a function that prints"... prob console.log
+        "write a function that returns"... prob return
+    The <code>return</code> is not a function.
+        Don't use parentheses with it unless you need to.
+    Pay attention to your code style  <br />
+        Improves readability
+        Helps in finding errors too!
+    When you make a variable (including arrow functions!)
+        Use const if you can - otherwise use let
+        Avoid var :)
+    Try to follow instructions, even with strange return values and strange variable values
+        <code>please return "Potaeto !"</code>
+        "please make a function called "toBinaryString""
+        Read the instructions completely
+    Don't avoid reviewing fundamentals, it's not a waste of time!
+        Such as:
+            JS types
+            how to make a function
+            how for loops work
+    Think about how you name things.
+        Sometimes this really helps with thinking about a problem
+        Also helps with finding issues
+        Naming is hard!!!</p>
+<h1>Clones vs. References</h1>
+<p>When we are calling a function with arguments, we are either giving the functiion a clone or a reference.</p>
+<p>Simple values, like numbers and strings are cloned/copied inside the function, so we will (for a VERY short time) in our computers memory the variable <code>myNumber</code> with a value of 7 AND at the same time the variable <code>x</code> also with the value 7. This is sometimes called "pass by value"</p>
+<p>Objects (and arrays) are not copied or cloned to function; a reference to them is given instead. This is sometimes called "pass by reference".</p>
+<h1>Hoooow can we clone an object then?!?</h1>
+<p>Cloning is hard.</p>
+<p>Trying to clone an object with the <code>=</code> assignment operator doesn't necessarily work the way you expect, because objects are references.</p>
+<p>The spread operator (technically called the spread syntax) <code>...</code> is a convenient way to make a <em>shallow</em> copy of an array or object. Shallow - meaning that there is no nested arrays or objects. Shallow = not deeply nested. </p>
+<p>The spread syntax "spreads" the array values or object properties where it is used.</p>
+<h1>Deep cloning technique</h1>
+<p>You can clone simple nested objects and arrays using a technique that uses <code>JSON.parse()</code> and <code>JSON.stringify()</code>. We will discuss both of them later, this is just one technique that uses them. This does not work for some fancier data / situations, but for most things this is fine. There are many other techniques online if you need them.</p>        </div>
     </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->

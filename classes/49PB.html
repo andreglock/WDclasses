@@ -26,7 +26,7 @@
                 </li>
                 
                 <li>
-                    <a href="#bdlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">Basic Digital Literacy</a>
+                    <a href="#bdlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Basic Digital Literacy</a>
                     <ul class="collapse list-unstyled" id="bdlSubmenu">
                         <li><a href="01BDL.html">BDL 1</a></li>
                         <li><a href="02BDL.html">BDL 2</a></li>
@@ -40,8 +40,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#uibSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">User Interface Basics</a>
-                    <ul class="collapse list-unstyled show" id="uibSubmenu">
+                    <a href="#uibSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">User Interface Basics</a>
+                    <ul class="collapse list-unstyled" id="uibSubmenu">
                         <li><a href="10UIB.html">UIB 1</a></li>
                         <li><a href="11UIB.html">UIB 2</a></li>
                         <li><a href="12UIB.html">UIB 3</a></li>
@@ -71,8 +71,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#pbSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Programing Basics</a>
-                    <ul class="collapse list-unstyled" id="pbSubmenu">
+                    <a href="#pbSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">Programing Basics</a>
+                    <ul class="collapse list-unstyled show" id="pbSubmenu">
                         <li><a href="36PB.html">PB 1</a></li>
                         <li><a href="37PB.html">PB 2</a></li>
                         <li><a href="38PB.html">PB 3</a></li>
@@ -109,102 +109,175 @@
                     </button>
                 </div>
             </header>
-<h1>UIB - Fonts and boxes</h1>
-<h2>Quick tip</h2>
+<h1>PB - Data Structure - 1</h1>
+<p>Yesterday we did
+    - Review
+    - Test</p>
+<p>Today we will
+    - Start to learn about objects</p>
+<h1>Introduction</h1>
+<p>Data structures? More advanced ways of storing data. Data organization, management and storage format
+that enables efficient access and modification. Arrays are data structures.</p>
+<p>Data is stored in the working memory (RAM) of your computer; not in the persistent (hard drive) memory. </p>
+<p>All variables are stored in the RAM, some programs take up a lot of memory.</p>
+<h1>Objects</h1>
+<p>I <em>highly</em> suggest that you code along with me as I show examples.</p>
 <ul>
-<li>Google Fonts for custom fonts</li>
-</ul>
-<h2>Everything is a box!</h2>
-<ul>
-<li>Easy to see with inspecting and setting Dev tools CSS</li>
-<li><code>* { border: 1px solid red !important; }</code></li>
-<li><code>div { border: 1px solid blue !important; }</code></li>
-<li><code>span { border: 1px solid green !important; }</code></li>
-</ul>
-<h2>Containing content</h2>
-<ul>
-<li>Semantic elements, let's learn a few</li>
-<li><code>&lt;main&gt;</code></li>
-<li>represents the main content of a page</li>
-<li>often combined with "skipnav" technique</li>
-<li>nav = your navigation menu<ul>
-<li><code>&lt;nav&gt;</code> - semantic element used for wrapping your navigation section</li>
+<li>like a basket for holding many related variables together inside<ul>
+<li>in objects, data is stored as key-value pairs</li>
 </ul>
 </li>
-<li>used for wrapping your main content</li>
-<li>"shrink wrapping" / wrapping<ul>
-<li>put all of your content inside the main</li>
+<li>
+<p>objects can be thought of as a <code>namespace</code>; they allow you to store variables like "username" without getting naming conflicts. Not a super important term :)</p>
+</li>
+<li>
+<p>often objects represent one concept, like a user or blog post</p>
+</li>
+<li>it's common to have an array of objects; like an array of users</li>
+</ul>
+<h1>Object literals</h1>
+<ul>
+<li>
+<p>Remember Array literals?</p>
+<ul>
+<li>INTRODUCING Object literals!<ul>
+<li><code>const &lt;nameOfObject&gt; = { &lt;key1&gt;:&lt;value1&gt;, &lt;key2&gt;:&lt;value2&gt; };</code></li>
+<li>the values can be any kind of value in JS</li>
 </ul>
 </li>
-<li>often you can have classes and/or ids for your main element<ul>
-<li><main class="container"></main></li>
 </ul>
 </li>
-<li>One (visible) main per page</li>
+<li>
+<p>Keys / Variables inside objects, for example the <code>age</code> there, are called properties!</p>
+</li>
+<li>The last property in the list may end with a comma<ul>
+<li>called a "TRAILING" or "HANGING" comma</li>
+<li>trailing commas make it easier to add/remove/move properties</li>
 </ul>
-<h2>Stop content busting out of its box!</h2>
-<pre><code>width: 40vw;       /* Set box width */
-height: 40vh;      /* Set box height */
-margin: auto;      /* Center this box inside its parent box */
-overflow: hidden;  /* Prevent content from overflowing out of the box! */
+</li>
+</ul>
+<h1>Const or let?</h1>
+<ul>
+<li>
+<p>When you create a <code>const</code> object variable, you can edit the stored object (its properties), but you cannot reassign the variable. The same is true for arrays. For const arrays we can edit the contents of the array, but we can not reassign them.</p>
+<pre><code>+-----------------+-------+------------------------+
+| VARIABLE        | VALUE | MEMORY                 |
++-----------------+-------+------------------------+
+| const myName    | Joel  |                        |
++-----------------+-------+------------------------+
+| const myAge     | 94    |                        |
++-----------------+-------+------------------------+
+| const petsArray | 0x001 | ["Veera", "Rauli"]     |
++-----------------+-------+------------------------+
+| const userObj   | 0x002 | { name: "John Smith" } |
++-----------------+-------+------------------------+
 </code></pre>
-<h2>Elements</h2>
+</li>
+<li>
+<p>Objects can contain arrays, and arrays can contain objects!</p>
+</li>
+<li>
+<p>Accessing properties</p>
 <ul>
-<li>Two types of elements</li>
-<li>Block<ul>
-<li>Always start (on) a new line</li>
-<li>Take up the full width available</li>
-<li>stretch out to the left and to the right as much as they can</li>
-<li>meaning it has a width of 100% by default</li>
-<li>the height is defined by the content automatically OR by the developer</li>
+<li>Get Values<ul>
+<li>// bracket notation, like arrays</li>
+<li>console.log(product["description"]);</li>
+<li>// dot notation</li>
+<li>console.log(product.description);</li>
 </ul>
 </li>
-<li>Inline<ul>
-<li>Start within an existing block-level element (they don't start a new line)</li>
+<li>Set Values<ul>
+<li>Bracket notation</li>
+<li><code>product["price"] = 4;</code></li>
+<li>Dot notation</li>
+<li><code>product.description_id = "Test"</code></li>
 </ul>
 </li>
 </ul>
-<h3>BLOCKS</h3>
+</li>
+</ul>
+<h1>The Type</h1>
 <ul>
-<li>main, nav, div, p, hr, lists(ul, ol, li), h1-h6, pre</li>
-<li><section><ul>
-<li>a section of the page which doesn't have a more specific semantic element to use</li>
-<li>often these would have a heading</li>
+<li>
+<p>The type - objects are objects</p>
+<ul>
+<li>Arrays are specific kinds of objects</li>
+<li>typeof {}</li>
+<li>typeof [1,2,3]</li>
+<li>To check if something is an array<ul>
+<li><code>Array.isArray()</code></li>
+<li>console.log(Array.isArray({})); // false</li>
+<li>console.log(Array.isArray([1,2,3])); // true</li>
 </ul>
 </li>
-<li><article><ul>
-<li>a self-contained composition in a page, which is intended to be independently redistributable or reusable</li>
-</ul>
-</li>
-<li><aside><ul>
-<li>a part of a document where the content is only indirectly related to the main content</li>
-</ul>
-</li>
-<li><header><ul>
-<li>defines the top part of a page</li>
-<li>often repeated in many pages</li>
 </ul>
 </li>
 <li>
-<footer>
+<p>Objects (and arrays), even empty ones, are truthy
+<code>console.log("Object truthy? ", Boolean({})); // true</code>
+<code>console.log("Object truthy? ", Boolean([])); // true</code></p>
+</li>
+</ul>
+<h1>Delete and add properties</h1>
 <ul>
-<li>defines the bottom part of a page</li>
-<li>often repeated in many pages</li>
+<li>
+<p>You can completely remove properties using <code>delete</code></p>
+<ul>
+<li>Remove the strength propety:</li>
+<li><code>delete searchResult.strength;</code> </li>
 </ul>
 </li>
 <li>
-<p>SO SO SO MANY MORE!</p>
+<p>You can add new properties using the bracket or the dot notation</p>
+<ul>
+<li>puppy.color = "black";</li>
+<li>puppy["breed"] = "mixed";</li>
+</ul>
 </li>
 </ul>
-<h3>INLINE</h3>
+<h1>COMPUTED PROPERTIES</h1>
 <ul>
-<li>span, a, em, br, img</li>
-<li>strong, b</li>
-<li>sup and sub</li>
-<li>input</li>
+<li>We can use brackets in an object literal<ul>
+<li>(that's called computed properties)</li>
+<li>With brackets, we can use a variable for the name of a property<pre><code>const identifier = "_id";
+const goat = {
+    name: "Mary",
+    [identifier]: 1234,
+};
+console.log(goat);
+</code></pre>
+</li>
 </ul>
-<p><strong>You do not need to know all of these</strong></p>
-<p><strong>Self-learning</strong> Have a look at MDN to see what Block and Inline elements exist</p>        </div>
+</li>
+</ul>
+<h1>Tips and tricks</h1>
+<ul>
+<li>
+<p>Note: Keywords / Reserved words in JS are allowed as property names</p>
+<pre><code>const anotherGoat = {
+default: true,
+function: 1234,
+delete: "YEAH SOMETHING HERE"
+};
+console.log(anotherGoat);
+</code></pre>
+</li>
+<li>
+<p>"Property value shorthand"</p>
+<ul>
+<li>In the real world, it's very common to use variables to set object properties.</li>
+<li>
+<p>When the property and the variable have the same name, we can shorten this!</p>
+<p>const username = "Req";
+const age = 11;</p>
+<p>const user = {
+    username, // property value shorthand
+    age,  // property value shorthand
+};</p>
+</li>
+</ul>
+</li>
+</ul>        </div>
     </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->

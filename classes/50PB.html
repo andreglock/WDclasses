@@ -26,7 +26,7 @@
                 </li>
                 
                 <li>
-                    <a href="#bdlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">Basic Digital Literacy</a>
+                    <a href="#bdlSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Basic Digital Literacy</a>
                     <ul class="collapse list-unstyled" id="bdlSubmenu">
                         <li><a href="01BDL.html">BDL 1</a></li>
                         <li><a href="02BDL.html">BDL 2</a></li>
@@ -40,8 +40,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#uibSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">User Interface Basics</a>
-                    <ul class="collapse list-unstyled show" id="uibSubmenu">
+                    <a href="#uibSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">User Interface Basics</a>
+                    <ul class="collapse list-unstyled" id="uibSubmenu">
                         <li><a href="10UIB.html">UIB 1</a></li>
                         <li><a href="11UIB.html">UIB 2</a></li>
                         <li><a href="12UIB.html">UIB 3</a></li>
@@ -71,8 +71,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#pbSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Programing Basics</a>
-                    <ul class="collapse list-unstyled" id="pbSubmenu">
+                    <a href="#pbSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle active">Programing Basics</a>
+                    <ul class="collapse list-unstyled show" id="pbSubmenu">
                         <li><a href="36PB.html">PB 1</a></li>
                         <li><a href="37PB.html">PB 2</a></li>
                         <li><a href="38PB.html">PB 3</a></li>
@@ -109,102 +109,55 @@
                     </button>
                 </div>
             </header>
-<h1>UIB - Fonts and boxes</h1>
-<h2>Quick tip</h2>
-<ul>
-<li>Google Fonts for custom fonts</li>
-</ul>
-<h2>Everything is a box!</h2>
-<ul>
-<li>Easy to see with inspecting and setting Dev tools CSS</li>
-<li><code>* { border: 1px solid red !important; }</code></li>
-<li><code>div { border: 1px solid blue !important; }</code></li>
-<li><code>span { border: 1px solid green !important; }</code></li>
-</ul>
-<h2>Containing content</h2>
-<ul>
-<li>Semantic elements, let's learn a few</li>
-<li><code>&lt;main&gt;</code></li>
-<li>represents the main content of a page</li>
-<li>often combined with "skipnav" technique</li>
-<li>nav = your navigation menu<ul>
-<li><code>&lt;nav&gt;</code> - semantic element used for wrapping your navigation section</li>
-</ul>
-</li>
-<li>used for wrapping your main content</li>
-<li>"shrink wrapping" / wrapping<ul>
-<li>put all of your content inside the main</li>
-</ul>
-</li>
-<li>often you can have classes and/or ids for your main element<ul>
-<li><main class="container"></main></li>
-</ul>
-</li>
-<li>One (visible) main per page</li>
-</ul>
-<h2>Stop content busting out of its box!</h2>
-<pre><code>width: 40vw;       /* Set box width */
-height: 40vh;      /* Set box height */
-margin: auto;      /* Center this box inside its parent box */
-overflow: hidden;  /* Prevent content from overflowing out of the box! */
-</code></pre>
-<h2>Elements</h2>
-<ul>
-<li>Two types of elements</li>
-<li>Block<ul>
-<li>Always start (on) a new line</li>
-<li>Take up the full width available</li>
-<li>stretch out to the left and to the right as much as they can</li>
-<li>meaning it has a width of 100% by default</li>
-<li>the height is defined by the content automatically OR by the developer</li>
-</ul>
-</li>
-<li>Inline<ul>
-<li>Start within an existing block-level element (they don't start a new line)</li>
-</ul>
-</li>
-</ul>
-<h3>BLOCKS</h3>
-<ul>
-<li>main, nav, div, p, hr, lists(ul, ol, li), h1-h6, pre</li>
-<li><section><ul>
-<li>a section of the page which doesn't have a more specific semantic element to use</li>
-<li>often these would have a heading</li>
-</ul>
-</li>
-<li><article><ul>
-<li>a self-contained composition in a page, which is intended to be independently redistributable or reusable</li>
-</ul>
-</li>
-<li><aside><ul>
-<li>a part of a document where the content is only indirectly related to the main content</li>
-</ul>
-</li>
-<li><header><ul>
-<li>defines the top part of a page</li>
-<li>often repeated in many pages</li>
-</ul>
-</li>
-<li>
-<footer>
-<ul>
-<li>defines the bottom part of a page</li>
-<li>often repeated in many pages</li>
-</ul>
-</li>
-<li>
-<p>SO SO SO MANY MORE!</p>
-</li>
-</ul>
-<h3>INLINE</h3>
-<ul>
-<li>span, a, em, br, img</li>
-<li>strong, b</li>
-<li>sup and sub</li>
-<li>input</li>
-</ul>
-<p><strong>You do not need to know all of these</strong></p>
-<p><strong>Self-learning</strong> Have a look at MDN to see what Block and Inline elements exist</p>        </div>
+<h1>PB - Data Structure - 2</h1>
+<p>Yesterday we did
+    - Object literals { age: 77 }
+    - Computed Properties { [propertyName]: "Admin" }
+    - Property value shorthand { username }
+    - Array and Object Typing
+        - typeof {} --&gt; "object"
+        - Array.isArray(someVariable)</p>
+<p>Today we will do
+    - Methods
+    - Object scope / object context</p>
+<blockquote>
+<p>Reminder: Tools to help you review / learn
+Edabit - for more problems to solve
+freecodecamp.org - to practice syntax
+Codewars (Thanks Lars!)</p>
+</blockquote>
+<h1>Before the lectures, a look at the previous task</h1>
+<p>Now try to do it again :)</p>
+<h1>Methods</h1>
+<p>What be a method?
+- "Methods are functions associated with an object (or class)"
+- "Methods are properties with function values"</p>
+<p>For example - both of these functions are methods
+    - <code>Math.random()</code> - "random" is a funtion, "Math" is a built-in object in JS that someone else has made for us
+    - <code>Math.ceil(1.2345)</code> - "ceil" is a function, also associated with the "Math" object.</p>
+<p>Creating methods is really similar to creating normal functions</p>
+<h1>Object literal context</h1>
+<p>Methods have one advantage over functions: they can refer to their associated object.</p>
+<p>In a function definition, <code>this</code> refers to the "owner" of the function. In our <code>animal</code> example, the animal object owns the <code>charge</code> function. </p>
+<p>In other words, <code>this.type</code> means the <code>type</code> property of the <code>animal</code> object.</p>
+<p>In a function, the <code>this</code> keyword refers to the context ("the owner") in which the function is running.</p>
+<h1>Important note</h1>
+<p>Due to the way that JavaScript functions work, you cannot use arrow functions for methods where you use the <code>this</code> keyword. </p>
+<p>When you take a method out of the object, it gets "unbound" from the original parent object.</p>
+<p>Binding = connecting = attaching a function to an object, without editing the original object.</p>
+<h1>Ultra quick simple new technique time</h1>
+<p>The "for...in" loop
+    - Useful for example when you don't know what properties an object has
+    - Useful for comparing objects</p>
+<p>Note: When comparing two objects, <code>object1 === object2</code> will always be false</p>
+<h1>Object Literal Method Shorthand</h1>
+<p>A shorter way of writing methods in object literals :)</p>
+<h1>Reminder: Tools to help you review / learn</h1>
+<blockquote>
+<p>Edabit - for more problems to solve
+freecodecamp.org - to practice syntax
+Codewars (Thanks Lars!)</p>
+</blockquote>        </div>
     </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
