@@ -190,7 +190,7 @@ header {
 ----------------------------------------------------- */
 @media (max-width: 768px) {
     #sidebar {
-        margin-left: -250px;
+        margin-left: -195px;
         transform: rotateY(90deg);
     }
     #sidebar.active {
