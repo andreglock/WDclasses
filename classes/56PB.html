@@ -114,55 +114,42 @@
                     </button>
                 </div>
             </header>
-<h1>PB - Data Structure - 2</h1>
-<p>Yesterday we did
-    - Object literals { age: 77 }
-    - Computed Properties { [propertyName]: "Admin" }
-    - Property value shorthand { username }
-    - Array and Object Typing
-        - typeof {} --&gt; "object"
-        - Array.isArray(someVariable)</p>
+<h1>PB - Classes - 2</h1>
+<p>Last time we did
+    constructor functions
+    a bit on prototype</p>
 <p>Today we will do
-    - Methods
-    - Object scope / object context</p>
+    actual classes</p>
+<h1>Actual classes</h1>
+<p>I think these are much nicer to read then constructor functions. Classes define a single concept, such as Product, User, MenuItem, Page or a Button.</p>
+<h2>EXAMPLE 1</h2>
+<p>The basic Class syntax in JavaScript</p>
+<p>To use classes in JavaScript we need two new things. First, we need the <code>class</code> keyword and second we need a <code>constructor</code> - constructor is just a special function name. </p>
+<p>Then, we can again use the <code>new</code> keyword to create a new object based on this class. his, again, is called instantiation. With the <code>new</code> keyword we are creating a new instance of a Class.</p>
+<p><em>THEORY</em>
+Classes in JavaScript are actually just "syntactic sugar" over the things we already know. </p>
 <blockquote>
-<p>Reminder: Tools to help you review / learn
-Edabit - for more problems to solve
-freecodecamp.org - to practice syntax
-Codewars (Thanks Lars!)</p>
+<p>"Syntactic sugar is syntax within a programming language that is designed to make things easier to read or to write. It makes the language "sweeter" for human use: things can be expressed more clearly, more concisely, or in an alternative style that some may prefer."
+- Wikipedia</p>
 </blockquote>
-<h1>Before the lectures, a look at the previous task</h1>
-<p>Now try to do it again :)</p>
-<h1>Methods</h1>
-<p>What be a method?
-- "Methods are functions associated with an object (or class)"
-- "Methods are properties with function values"</p>
-<p>For example - both of these functions are methods
-    - <code>Math.random()</code> - "random" is a funtion, "Math" is a built-in object in JS that someone else has made for us
-    - <code>Math.ceil(1.2345)</code> - "ceil" is a function, also associated with the "Math" object.</p>
-<p>Creating methods is really similar to creating normal functions</p>
-<h1>Object literal context</h1>
-<p>Methods have one advantage over functions: they can refer to their associated object.</p>
-<p>In a function definition, <code>this</code> refers to the "owner" of the function. In our <code>animal</code> example, the animal object owns the <code>charge</code> function. </p>
-<p>In other words, <code>this.type</code> means the <code>type</code> property of the <code>animal</code> object.</p>
-<p>In a function, the <code>this</code> keyword refers to the context ("the owner") in which the function is running.</p>
-<h1>Important note</h1>
-<p>Due to the way that JavaScript functions work, you cannot use arrow functions for methods where you use the <code>this</code> keyword. </p>
-<p>When you take a method out of the object, it gets "unbound" from the original parent object.</p>
-<p>Binding = connecting = attaching a function to an object, without editing the original object.</p>
-<h1>Ultra quick simple new technique time</h1>
-<p>The "for...in" loop
-    - Useful for example when you don't know what properties an object has
-    - Useful for comparing objects</p>
-<p>Note: When comparing two objects, <code>object1 === object2</code> will always be false</p>
-<h1>Object Literal Method Shorthand</h1>
-<p>A shorter way of writing methods in object literals :)</p>
-<h1>Reminder: Tools to help you review / learn</h1>
-<blockquote>
-<p>Edabit - for more problems to solve
-freecodecamp.org - to practice syntax
-Codewars (Thanks Lars!)</p>
-</blockquote>        </div>
+<p>When you write a class, "under the hood" it gets converted into a constructor function and prototype things.</p>
+<pre><code>What the `class Pet {...}` syntactic sugar really does is:
+    1. Creates a function named Pet
+    2. That function becomes the result of the class declaration.
+    3. The function code is taken from the constructor method (empty if we don’t make a constructor).
+    4. Stores methods in `Pet.prototype.`
+</code></pre>
+<h2>EXAMPLE 2</h2>
+<p>Definition: A class is a blueprint or prototype that defines the variables and methods common to all objects of a certain kind. </p>
+<p>It is common for classes to have multiple methods, not just the constructor.</p>
+<h2>EXAMPLE 3</h2>
+<p>Classes are functions?!? </p>
+<p>Usually you can ignore this!</p>
+<h2>EXAMPLE 4</h2>
+<p>Class Expressions</p>
+<h2>EXAMPLE 5</h2>
+<p>Static methods - these are functions that we call directly on the class, not its instances.</p>
+<p>🐭 𝑠𝑞𝑢𝑒𝑒𝑘</p>        </div>
     </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->

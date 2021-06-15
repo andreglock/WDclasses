@@ -114,55 +114,27 @@
                     </button>
                 </div>
             </header>
-<h1>PB - Data Structure - 2</h1>
-<p>Yesterday we did
-    - Object literals { age: 77 }
-    - Computed Properties { [propertyName]: "Admin" }
-    - Property value shorthand { username }
-    - Array and Object Typing
-        - typeof {} --&gt; "object"
-        - Array.isArray(someVariable)</p>
+<h1>PB - Classes - 4</h1>
+<p>Last time we did
+    properties, static properties
+    the <code>Date</code> class</p>
 <p>Today we will do
-    - Methods
-    - Object scope / object context</p>
-<blockquote>
-<p>Reminder: Tools to help you review / learn
-Edabit - for more problems to solve
-freecodecamp.org - to practice syntax
-Codewars (Thanks Lars!)</p>
-</blockquote>
-<h1>Before the lectures, a look at the previous task</h1>
-<p>Now try to do it again :)</p>
-<h1>Methods</h1>
-<p>What be a method?
-- "Methods are functions associated with an object (or class)"
-- "Methods are properties with function values"</p>
-<p>For example - both of these functions are methods
-    - <code>Math.random()</code> - "random" is a funtion, "Math" is a built-in object in JS that someone else has made for us
-    - <code>Math.ceil(1.2345)</code> - "ceil" is a function, also associated with the "Math" object.</p>
-<p>Creating methods is really similar to creating normal functions</p>
-<h1>Object literal context</h1>
-<p>Methods have one advantage over functions: they can refer to their associated object.</p>
-<p>In a function definition, <code>this</code> refers to the "owner" of the function. In our <code>animal</code> example, the animal object owns the <code>charge</code> function. </p>
-<p>In other words, <code>this.type</code> means the <code>type</code> property of the <code>animal</code> object.</p>
-<p>In a function, the <code>this</code> keyword refers to the context ("the owner") in which the function is running.</p>
-<h1>Important note</h1>
-<p>Due to the way that JavaScript functions work, you cannot use arrow functions for methods where you use the <code>this</code> keyword. </p>
-<p>When you take a method out of the object, it gets "unbound" from the original parent object.</p>
-<p>Binding = connecting = attaching a function to an object, without editing the original object.</p>
-<h1>Ultra quick simple new technique time</h1>
-<p>The "for...in" loop
-    - Useful for example when you don't know what properties an object has
-    - Useful for comparing objects</p>
-<p>Note: When comparing two objects, <code>object1 === object2</code> will always be false</p>
-<h1>Object Literal Method Shorthand</h1>
-<p>A shorter way of writing methods in object literals :)</p>
-<h1>Reminder: Tools to help you review / learn</h1>
-<blockquote>
-<p>Edabit - for more problems to solve
-freecodecamp.org - to practice syntax
-Codewars (Thanks Lars!)</p>
-</blockquote>        </div>
+    Nodemon
+    Inheritance</p>
+<p>Next monday (24.05) and tuesday (25.05) are days off, so no classes then!</p>
+<h1>Nodemon</h1>
+<p>Nodemon "Node monitor" is a tool commonly used when developing with Node. Nodemin is a utility that watches files and as soon as it notices a change in a file, it will restart your program.</p>
+<p>To close nodemon you need to press <code>Ctrl+c</code></p>
+<p>Install nodemon <code>npm install -g nodemon</code>. This install nodemon Globally (the -g flag) meaning that you can use it from anywhere.</p>
+<h1>Inheritance</h1>
+<p>Classes in JavaScript support inheritance using the <code>extends</code> keyword. For example in</p>
+<pre><code>class Parent { }
+class Child extends Parent { }
+</code></pre>
+<p>the Child class inherits from Parent: the constructor, fields, and methods. In cases like this, the Parent class is sometimes called the base class and sometimes even the super class.</p>
+<h1>EXAMPLE 1 - Basic constructors</h1>
+<h1>EXAMPLE 2 - Parent and Child constructors</h1>
+<h1>EXAMPLE 3 - More complex use case</h1>        </div>
     </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->

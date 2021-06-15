@@ -114,55 +114,29 @@
                     </button>
                 </div>
             </header>
-<h1>PB - Data Structure - 2</h1>
+<h1>PB - Classes - 3</h1>
 <p>Yesterday we did
-    - Object literals { age: 77 }
-    - Computed Properties { [propertyName]: "Admin" }
-    - Property value shorthand { username }
-    - Array and Object Typing
-        - typeof {} --&gt; "object"
-        - Array.isArray(someVariable)</p>
+    actual classes</p>
 <p>Today we will do
-    - Methods
-    - Object scope / object context</p>
+    - properties, static properties
+    - The <code>Date</code> class</p>
+<h1>Quiz</h1>
+<h1>Class properties and static properties</h1>
+<p>Classes can have properties, kind of like objects can. In JS, these things are called "Class fields". Quite often these are just referred to as properties. This is a very new feature in JavaScript!</p>
+<h2>EXAMPLE 1</h2>
+<p>Class fields are set on individual objects</p>
+<h2>EXAMPLE 2</h2>
+<p>Class fields can be static too!
+Static properties exist on the class, not the instances.</p>
+<h2>EXAMPLE 3</h2>
+<p>Class fields are public by default, but they can be private too. NOT super important.</p>
+<h1>The Date class</h1>
+<p>This is the basic way of working with time stuff in JS. For instance, we can use it to store creation/modification times, to measure time, or just to print out the current date.</p>
 <blockquote>
-<p>Reminder: Tools to help you review / learn
-Edabit - for more problems to solve
-freecodecamp.org - to practice syntax
-Codewars (Thanks Lars!)</p>
+<p>A JavaScript date is internally specified as the number of milliseconds that have elapsed since midnight on January 1, 1970, UTC. This date and time are not the same as the UNIX epoch (the number of seconds that have elapsed since midnight on January 1, 1970, UTC), which is the predominant base value for computer-recorded date and time values. - Wikipedia</p>
 </blockquote>
-<h1>Before the lectures, a look at the previous task</h1>
-<p>Now try to do it again :)</p>
-<h1>Methods</h1>
-<p>What be a method?
-- "Methods are functions associated with an object (or class)"
-- "Methods are properties with function values"</p>
-<p>For example - both of these functions are methods
-    - <code>Math.random()</code> - "random" is a funtion, "Math" is a built-in object in JS that someone else has made for us
-    - <code>Math.ceil(1.2345)</code> - "ceil" is a function, also associated with the "Math" object.</p>
-<p>Creating methods is really similar to creating normal functions</p>
-<h1>Object literal context</h1>
-<p>Methods have one advantage over functions: they can refer to their associated object.</p>
-<p>In a function definition, <code>this</code> refers to the "owner" of the function. In our <code>animal</code> example, the animal object owns the <code>charge</code> function. </p>
-<p>In other words, <code>this.type</code> means the <code>type</code> property of the <code>animal</code> object.</p>
-<p>In a function, the <code>this</code> keyword refers to the context ("the owner") in which the function is running.</p>
-<h1>Important note</h1>
-<p>Due to the way that JavaScript functions work, you cannot use arrow functions for methods where you use the <code>this</code> keyword. </p>
-<p>When you take a method out of the object, it gets "unbound" from the original parent object.</p>
-<p>Binding = connecting = attaching a function to an object, without editing the original object.</p>
-<h1>Ultra quick simple new technique time</h1>
-<p>The "for...in" loop
-    - Useful for example when you don't know what properties an object has
-    - Useful for comparing objects</p>
-<p>Note: When comparing two objects, <code>object1 === object2</code> will always be false</p>
-<h1>Object Literal Method Shorthand</h1>
-<p>A shorter way of writing methods in object literals :)</p>
-<h1>Reminder: Tools to help you review / learn</h1>
-<blockquote>
-<p>Edabit - for more problems to solve
-freecodecamp.org - to practice syntax
-Codewars (Thanks Lars!)</p>
-</blockquote>        </div>
+<p>Dates and times are very complicated to handle and the Dates in JavaScript are famous for being annoying. Very commonly big projects use external time libraries.</p>
+<h2>EXAMPLES</h2>        </div>
     </div>
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
